@@ -1,0 +1,50 @@
+11-06 00:15:47.466  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:47.467  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 44100,format 1, channels 3, flags 4
+11-06 00:15:47.467  1343  1402 E AudioTrack: Could not get audio output for session 2865, stream type -1, usage 13, sample rate 44100, format 0x1, channel mask 0x3, flags 0x4
+11-06 00:15:47.467  1343  1402 E SoundPool: Error creating AudioTrack
+11-06 00:15:47.594  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:47.594  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:47.640  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 44100,format 1, channels 3, flags 4
+11-06 00:15:47.640  1343  1402 E AudioTrack: Could not get audio output for session 2873, stream type -1, usage 13, sample rate 44100, format 0x1, channel mask 0x3, flags 0x4
+11-06 00:15:47.642  1343  1402 E SoundPool: Error creating AudioTrack
+11-06 00:15:48.175  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:48.175  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:48.176  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 44100,format 1, channels 3, flags 4
+11-06 00:15:48.176  1343  1402 E AudioTrack: Could not get audio output for session 2881, stream type -1, usage 13, sample rate 44100, format 0x1, channel mask 0x3, flags 0x4
+11-06 00:15:48.176  1343  1402 E SoundPool: Error creating AudioTrack
+11-06 00:15:48.576  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:48.576  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:48.577  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 44100,format 1, channels 3, flags 4
+11-06 00:15:48.577  1343  1402 E AudioTrack: Could not get audio output for session 2889, stream type -1, usage 13, sample rate 44100, format 0x1, channel mask 0x3, flags 0x4
+11-06 00:15:48.577  1343  1402 E SoundPool: Error creating AudioTrack
+11-06 00:15:48.756  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:48.756  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:48.756  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 44100,format 1, channels 3, flags 4
+11-06 00:15:48.756  1343  1402 E AudioTrack: Could not get audio output for session 2897, stream type -1, usage 13, sample rate 44100, format 0x1, channel mask 0x3, flags 0x4
+11-06 00:15:48.756  1343  1402 E SoundPool: Error creating AudioTrack
+11-06 00:15:49.909  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:49.909  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 0,format 0, channels 3, flags 0
+11-06 00:15:49.909  1073  4086 W APM_AudioPolicyManager: getOutput() could not find output for stream 1, samplingRate 44100,format 1, channels 3, flags 4
+11-06 00:15:49.909  1343  1402 E AudioTrack: Could not get audio output for session 2905, stream type -1, usage 13, sample rate 44100, format 0x1, channel mask 0x3, flags 0x4
+11-06 00:15:49.910  1343  1402 E SoundPool: Error creating AudioTrack
+11-06 00:15:50.305  1064  1064 D gralloc : Avoid registering a buffer in the process that created it. This may cause memory ordering problems.
+11-06 00:15:50.305  1064  1064 E Gralloc1On0Adapter: gralloc0 register failed: 1
+11-06 00:15:50.305  1064  1064 W GraphicBufferMapper: registerBuffer(0x7d775394c120) failed: 5
+11-06 00:15:50.305  1064  1064 E GraphicBuffer: unflatten: registerBuffer failed: Unknown error -5 (5)
+11-06 00:15:50.305  1064  1064 E Surface : dequeueBuffer: IGraphicBufferProducer::requestBuffer failed: 5
+11-06 00:15:50.305  1343  4805 W WindowManager: Screenshot failure taking screenshot for (1024x768) to layer 21055
+11-06 00:15:50.496  4820  4820 I LatinIME: Starting input. Cursor position = -1,-1
+11-06 00:15:50.496  4820  4820 I InputAttributes: InputType.TYPE_NULL is specified
+11-06 00:15:50.839  1064  1064 W SurfaceFlinger: couldn't log to binary event log: overflow.
+11-06 00:15:51.554  6895  6895 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+11-06 00:15:51.555  6895  6895 D AndroidRuntime: CheckJNI is OFF
+11-06 00:15:51.925  6895  6895 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-06 00:15:51.941  6895  6895 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+11-06 00:15:52.045  6895  6895 W         : Failed to bind-mount /system/lib64/x86_64/cpuinfo as /proc/cpuinfo: No such file or directory
+11-06 00:15:52.099  6895  6895 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-06 00:15:52.099  6895  6895 E android.os.Debug: failed to load memtrack module: -2
+11-06 00:15:52.100  6895  6895 I Radio-JNI: register_android_hardware_Radio DONE
+11-06 00:15:52.117  6895  6895 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-06 00:15:52.566  6895  6895 D AndroidRuntime: Shutting down VM
+11-06 00:15:53.401  1343  1415 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-06 00:15:54.536  1343  1343 W WindowManager: Attempted to remove non-existing token: android.os.Binder@6d57e7c

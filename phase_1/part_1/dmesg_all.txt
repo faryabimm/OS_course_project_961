@@ -1,0 +1,705 @@
+[    5.499490] type=1400 audit(1509879974.308:35): avc: denied { getopt } for pid=1006 comm="logd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_audit_socket permissive=1
+[    5.521942] Registering sdcardfs 0.1
+[    5.585714] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+[    5.621941] type=1400 audit(1509879974.430:36): avc: denied { write } for pid=1008 comm="sh" name="power" dev="sysfs" ino=2749 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[    5.621979] type=1400 audit(1509879974.430:37): avc: denied { add_name } for pid=1008 comm="sh" name="wakeup" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[    5.621996] type=1400 audit(1509879974.430:38): avc: denied { create } for pid=1008 comm="sh" name="wakeup" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    6.635784] type=1400 audit(1509879975.444:39): avc: denied { create } for pid=1051 comm="vold" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[    7.327792] binder: 1061:1061 transaction failed 29189/-22, size 0-0 line 2939
+[    8.329666] healthd: No battery devices found
+[    8.329709] healthd: battery l=100 v=0 t=42.4 h=2 st=2 chg=a
+[   11.668718] type=1400 audit(1509879980.477:90): avc: denied { setopt } for pid=1105 comm="iptables" lport=255 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=rawip_socket permissive=1
+[   12.246985] type=1400 audit(1509879981.055:91): avc: denied { ioctl } for pid=1064 comm="surfaceflinger" path="/dev/graphics/fb0" dev="tmpfs" ino=4445 ioctlcmd=0x4600 scontext=u:r:init:s0 tcontext=u:object_r:graphics_device:s0 tclass=chr_file permissive=1
+[   12.290771] type=1400 audit(1509879981.096:92): avc: denied { write } for pid=1064 comm="surfaceflinger" name="fb0" dev="tmpfs" ino=4445 scontext=u:r:init:s0 tcontext=u:object_r:graphics_device:s0 tclass=chr_file permissive=1
+[   12.413600] x_tables: ip_tables: owner match: used from hooks INPUT, but only valid from OUTPUT/POSTROUTING
+[   12.418416] x_tables: ip6_tables: owner match: used from hooks INPUT, but only valid from OUTPUT/POSTROUTING
+[   12.559055] init: Service bootanim does not have a SELinux domain defined.
+[   12.559060] init: Starting service 'bootanim'...
+[   12.581708] type=1400 audit(1509879981.390:93): avc: denied { create } for pid=1308 comm="ip" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   12.581962] type=1400 audit(1509879981.390:94): avc: denied { setopt } for pid=1308 comm="ip" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   12.582859] type=1400 audit(1509879981.390:95): avc: denied { bind } for pid=1308 comm="ip" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   12.582890] type=1400 audit(1509879981.390:96): avc: denied { getattr } for pid=1308 comm="ip" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   12.582914] type=1400 audit(1509879981.390:97): avc: denied { write } for pid=1308 comm="ip" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   12.582937] type=1400 audit(1509879981.390:98): avc: denied { nlmsg_read } for pid=1308 comm="ip" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   12.582960] type=1400 audit(1509879981.390:99): avc: denied { read } for pid=1308 comm="ip" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[   12.586412] modprobe: /sbin/modprobe netdev-dummy0
+[   12.595035] modprobe: /sbin/modprobe dummy0
+[   12.603398] audit: audit_lost=14 audit_rate_limit=20 audit_backlog_limit=64
+[   12.603399] audit: rate limit exceeded
+[   30.849194] type=1400 audit(1509879999.657:115): avc: denied { execmod } for pid=1072 comm="main" path="/system/vendor/lib/libavcodec.so" dev="sda1" ino=106695 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   31.229694] capability: warning: `main' uses 32-bit capabilities (legacy support in use)
+[   33.948514] type=1400 audit(1509880002.757:116): avc: denied { getattr } for pid=1071 comm="main" path="/sys/kernel/debug/tracing/trace_marker" dev="tracefs" ino=41 scontext=u:r:init:s0 tcontext=u:object_r:debugfs_trace_marker:s0 tclass=file permissive=1
+[   33.949980] type=1400 audit(1509880002.758:117): avc: denied { setpcap } for pid=1343 comm="main" capability=8 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[   33.950636] type=1400 audit(1509880002.759:118): avc: denied { check_context } for pid=1343 comm="main" scontext=u:r:init:s0 tcontext=u:object_r:kernel:s0 tclass=security permissive=1
+[   33.950798] type=1400 audit(1509880002.759:119): avc: denied { setcurrent } for pid=1343 comm="main" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[   33.951105] type=1400 audit(1509880002.759:120): avc: denied { dyntransition } for pid=1343 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[   33.953184] type=1400 audit(1509880002.762:121): avc: denied { read } for pid=1343 comm="main" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E207370616365202864656C6574656429 dev="tmpfs" ino=8517 scontext=u:r:system_server:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[   34.518938] type=1400 audit(1509880003.327:122): avc: denied { sendto } for pid=1343 comm="main" path="/dev/socket/logdw" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[   34.646254] type=1400 audit(1509880003.455:123): avc: denied { execute } for pid=1343 comm="system_server" path="/system/framework/oat/x86_64/services.odex" dev="sda1" ino=41808 scontext=u:r:system_server:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   35.673580] type=1400 audit(1509880004.482:124): avc: denied { call } for pid=1343 comm="system_server" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[   36.190953] type=1400 audit(1509880004.999:125): avc: denied { transfer } for pid=1343 comm="system_server" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[   36.191098] type=1400 audit(1509880004.999:126): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[   36.201068] type=1400 audit(1509880005.009:127): avc: denied { write } for pid=1343 comm="system_server" name="uinput" dev="tmpfs" ino=4479 scontext=u:r:system_server:s0 tcontext=u:object_r:uhid_device:s0 tclass=chr_file permissive=1
+[   36.201087] input: Android Power Button as /devices/virtual/input/input5
+[   36.201189] type=1400 audit(1509880005.009:128): avc: denied { open } for pid=1343 comm="system_server" path="/dev/uinput" dev="tmpfs" ino=4479 scontext=u:r:system_server:s0 tcontext=u:object_r:uhid_device:s0 tclass=chr_file permissive=1
+[   36.201220] type=1400 audit(1509880005.009:129): avc: denied { ioctl } for pid=1343 comm="system_server" path="/dev/uinput" dev="tmpfs" ino=4479 ioctlcmd=0x5564 scontext=u:r:system_server:s0 tcontext=u:object_r:uhid_device:s0 tclass=chr_file permissive=1
+[   36.201247] type=1400 audit(1509880005.010:130): avc: denied { read } for pid=1051 comm="vold" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[   36.201273] type=1400 audit(1509880005.010:131): avc: denied { read } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[   36.201711] type=1400 audit(1509880005.010:132): avc: denied { read } for pid=1001 comm="ueventd" name="modules.dep" dev="sda1" ino=270341 scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   36.201772] type=1400 audit(1509880005.010:133): avc: denied { open } for pid=1001 comm="ueventd" path="/system/lib/modules/4.9.54-android-x86_64-gfb63269e5ada/modules.dep" dev="sda1" ino=270341 scontext=u:r:ueventd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   36.203066] type=1400 audit(1509880005.011:134): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[   36.203584] ueventd: blacklisted module evbug: 1
+[   43.849242] type=1400 audit(1509880012.657:137): avc: denied { open } for pid=1343 comm="system_server" path="/selinux_version" dev="tmpfs" ino=4373 scontext=u:r:system_server:s0 tcontext=u:object_r:tmpfs:s0 tclass=file permissive=1
+[   43.870749] type=1400 audit(1509880012.679:138): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   43.871960] type=1400 audit(1509880012.680:139): avc: denied { check_context } for pid=1077 comm="installd" scontext=u:r:init:s0 tcontext=u:object_r:kernel:s0 tclass=security permissive=1
+[   43.871988] type=1400 audit(1509880012.680:140): avc: denied { read } for pid=1077 comm="installd" name="com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   43.913575] type=1400 audit(1509880012.722:141): avc: denied { setattr } for pid=1077 comm="installd" name="com.google.android.googlequicksearchbox" dev="sda1" ino=131263 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   43.913632] type=1400 audit(1509880012.722:142): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.google.android.googlequicksearchbox/lib" dev="sda1" ino=131270 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0 tclass=lnk_file permissive=1
+[   43.913672] type=1400 audit(1509880012.722:143): avc: denied { write } for pid=1077 comm="installd" name="com.google.android.googlequicksearchbox" dev="sda1" ino=131263 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   43.913705] type=1400 audit(1509880012.722:144): avc: denied { remove_name } for pid=1077 comm="installd" name="lib" dev="sda1" ino=131270 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   43.913736] type=1400 audit(1509880012.722:145): avc: denied { unlink } for pid=1077 comm="installd" name="lib" dev="sda1" ino=131270 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0 tclass=lnk_file permissive=1
+[   43.913768] type=1400 audit(1509880012.722:146): avc: denied { add_name } for pid=1077 comm="installd" name="lib" scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   44.645213] healthd: battery l=100 v=0 t=42.4 h=2 st=2 chg=a
+[   45.446359] init: write_file: Unable to open '/proc/sys/vm/extra_free_kbytes': No such file or directory
+[   46.077488] modprobe: /sbin/modprobe netdev-wlan0
+[   46.088161] modprobe: /sbin/modprobe wlan0
+[   46.982532] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   46.990894] modprobe: /sbin/modprobe net-pf-16-proto-4-type-10
+[   47.071148] modprobe: /sbin/modprobe net-pf-16-proto-4-type-2-6
+[   47.165398] init: Service exec 4 (/system/bin/logwrapper) does not have a SELinux domain defined.
+[   47.165408] init: Starting service 'exec 4 (/system/bin/logwrapper)'...
+[   47.174650] init: Service 'exec 4 (/system/bin/logwrapper)' (pid 1425) exited with status 0
+[   47.429679] audit: audit_lost=17 audit_rate_limit=20 audit_backlog_limit=64
+[   47.429681] audit: rate limit exceeded
+[   47.930262] sdcardfs version 2.0
+[   47.930265] sdcardfs: dev_name -> /data/media
+[   47.930265] sdcardfs: options -> fsuid=1023,fsgid=1023,multiuser,mask=6,userid=0,gid=1015
+[   47.930266] sdcardfs: mnt -> ffff9c2cd7aa0e20
+[   47.930284] sdcardfs: mounted on top of /data/media type ext4
+[   47.930420] sdcardfs version 2.0
+[   47.930420] sdcardfs: dev_name -> /data/media
+[   47.930421] sdcardfs: options -> fsuid=1023,fsgid=1023,multiuser,mask=23,userid=0,gid=9997
+[   47.930422] sdcardfs: mnt -> ffff9c2cd30968e0
+[   47.930429] sdcardfs: mounted on top of /data/media type ext4
+[   47.930463] sdcardfs version 2.0
+[   47.930463] sdcardfs: dev_name -> /data/media
+[   47.930464] sdcardfs: options -> fsuid=1023,fsgid=1023,multiuser,mask=7,userid=0,gid=9997
+[   47.930465] sdcardfs: mnt -> ffff9c2cd7a96aa0
+[   47.930471] sdcardfs: mounted on top of /data/media type ext4
+[   48.924889] type=1400 audit(1509880017.733:235): avc: denied { execmod } for pid=1081 comm="Binder:1081_1" path="/system/vendor/lib/libavcodec.so" dev="sda1" ino=106695 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   48.975561] type=1400 audit(1509880017.784:236): avc: denied { dyntransition } for pid=1521 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=process permissive=1
+[   48.976636] type=1400 audit(1509880017.785:237): avc: denied { sendto } for pid=1521 comm="ndroid.setting" path="/dev/socket/logdw" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[   48.982664] type=1400 audit(1509880017.791:238): avc: denied { call } for pid=1521 comm="re-initialized>" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[   48.982788] audit: audit_lost=62 audit_rate_limit=20 audit_backlog_limit=64
+[   48.982789] audit: rate limit exceeded
+[   49.017559] type=1400 audit(1509880017.826:243): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=11410 scontext=u:r:init:s0 tcontext=u:r:radio:s0 tclass=file permissive=1
+[   49.021536] type=1400 audit(1509880017.830:244): avc: denied { getattr } for pid=1507 comm="m.android.phone" path="/system/priv-app/TeleService/TeleService.apk" dev="sda1" ino=106498 scontext=u:r:radio:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   49.028285] type=1400 audit(1509880017.837:245): avc: denied { getattr } for pid=1507 comm="m.android.phone" path="/system" dev="sda1" ino=32775 scontext=u:r:radio:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   49.028349] type=1400 audit(1509880017.837:246): avc: denied { read } for pid=1507 comm="m.android.phone" name="TeleService.odex" dev="sda1" ino=106501 scontext=u:r:radio:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   49.028381] type=1400 audit(1509880017.837:247): avc: denied { open } for pid=1507 comm="m.android.phone" path="/system/priv-app/TeleService/oat/x86_64/TeleService.odex" dev="sda1" ino=106501 scontext=u:r:radio:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   49.044783] type=1400 audit(1509880017.851:248): avc: denied { execute } for pid=1507 comm="m.android.phone" path="/system/priv-app/TeleService/oat/x86_64/TeleService.odex" dev="sda1" ino=106501 scontext=u:r:radio:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   53.791959] init: Service 'bootanim' (pid 1309) exited with status 0
+[   54.133536] init: Service exec 5 (/system/bin/logwrapper) does not have a SELinux domain defined.
+[   54.133540] init: Starting service 'exec 5 (/system/bin/logwrapper)'...
+[   54.312603] init: Service 'exec 5 (/system/bin/logwrapper)' (pid 1745) exited with status 0
+[   54.312681] init: Service exec 6 (/system/bin/bootstat) does not have a SELinux domain defined.
+[   54.312683] init: Starting service 'exec 6 (/system/bin/bootstat)'...
+[   54.350130] type=1400 audit(1509880023.154:290): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   54.350173] type=1400 audit(1509880023.154:291): avc: denied { read } for pid=1077 comm="installd" name="com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   54.353960] type=1400 audit(1509880023.162:292): avc: denied { setattr } for pid=1077 comm="installd" name="com.google.android.googlequicksearchbox" dev="sda1" ino=131263 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   54.354080] type=1400 audit(1509880023.163:293): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.google.android.googlequicksearchbox/lib" dev="sda1" ino=131270 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0 tclass=lnk_file permissive=1
+[   54.354124] type=1400 audit(1509880023.163:294): avc: denied { write } for pid=1077 comm="installd" name="com.google.android.googlequicksearchbox" dev="sda1" ino=131263 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   54.354159] type=1400 audit(1509880023.163:295): avc: denied { remove_name } for pid=1077 comm="installd" name="lib" dev="sda1" ino=131270 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   54.354194] type=1400 audit(1509880023.163:296): avc: denied { unlink } for pid=1077 comm="installd" name="lib" dev="sda1" ino=131270 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0 tclass=lnk_file permissive=1
+[   54.354251] type=1400 audit(1509880023.163:297): avc: denied { add_name } for pid=1077 comm="installd" name="lib" scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[   54.354575] type=1400 audit(1509880023.163:298): avc: denied { create } for pid=1077 comm="installd" name="lib" scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0 tclass=lnk_file permissive=1
+[   54.481813] type=1400 audit(1509880023.276:299): avc: denied { setattr } for pid=1051 comm="vold" name="0" dev="sdcardfs" ino=147502 scontext=u:r:init:s0 tcontext=u:object_r:sdcardfs:s0 tclass=dir permissive=1
+[   54.729439] init: Service 'exec 6 (/system/bin/bootstat)' (pid 1765) exited with status 0
+[   54.729520] init: Service exec 7 (/system/bin/bootstat) does not have a SELinux domain defined.
+[   54.729522] init: Starting service 'exec 7 (/system/bin/bootstat)'...
+[   54.770195] init: Service 'exec 7 (/system/bin/bootstat)' (pid 1790) exited with status 0
+[   60.262551] type=1400 audit(1509880029.071:340): avc: denied { read } for pid=1768 comm="HeapTaskDaemon" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E2073706163652031202864656C6574656429 dev="tmpfs" ino=5935 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[   62.321333] type=1400 audit(1509880031.130:341): avc: denied { read } for pid=1438 comm="ndroid.systemui" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[   62.557634] type=1400 audit(1509880031.366:342): avc: denied { transfer } for pid=1064 comm="Binder:1064_5" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[   62.919793] type=1400 audit(1509880031.728:343): avc: denied { read write } for pid=1064 comm="Binder:1064_3" path="socket:[11024]" dev="sockfs" ino=11024 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[   63.298615] type=1400 audit(1509880032.107:344): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[   63.934302] type=1400 audit(1509880032.743:345): avc: denied { read } for pid=1343 comm="android.display" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[   65.321956] type=1400 audit(1509880034.130:346): avc: denied { transfer } for pid=1870 comm="RenderThread" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[   65.638731] type=1400 audit(1509880034.447:347): avc: denied { call } for pid=1064 comm="Binder:1064_3" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=binder permissive=1
+[   66.019641] type=1400 audit(1509880034.828:348): avc: denied { transfer } for pid=1810 comm="hbox:interactor" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[   68.009451] type=1400 audit(1509880036.818:349): avc: denied { dyntransition } for pid=2008 comm="main" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[   68.009608] type=1400 audit(1509880036.818:350): avc: denied { setpgid } for pid=1071 comm="main" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[   71.327040] type=1400 audit(1509880040.135:351): avc: denied { node_bind } for pid=1083 comm="netd" src=54911 scontext=u:r:init:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[   74.366622] type=1400 audit(1509880043.175:352): avc: denied { execute_no_trans } for pid=2073 comm="initCrit3-1" path="/system/bin/dex2oat" dev="sda1" ino=41029 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   76.391882] binder: 1919:1928 DecRefs 0 refcount change on invalid ref 59 ret -22
+[   76.392784] binder: 1919:2088 IncRefs 0 refcount change on invalid ref 59 ret -22
+[   76.392786] binder: 1919:2088 Acquire 1 refcount change on invalid ref 59 ret -22
+[   76.392788] binder: transaction release 23145 bad handle 59, ret = -22
+[   81.304168] type=1400 audit(1509880050.108:353): avc: denied { read } for pid=1898 comm="pool-5-thread-3" name="YouTube.apk" dev="sda1" ino=33003 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   81.304249] type=1400 audit(1509880050.109:354): avc: denied { open } for pid=1898 comm="pool-5-thread-3" path="/system/app/YouTube/YouTube.apk" dev="sda1" ino=33003 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   81.304294] type=1400 audit(1509880050.109:355): avc: denied { getattr } for pid=1898 comm="pool-5-thread-3" path="/system/app/YouTube/YouTube.apk" dev="sda1" ino=33003 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   86.869555] type=1400 audit(1509880055.678:356): avc: denied { getpgid } for pid=1071 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[   87.486678] type=1400 audit(1509880056.295:357): avc: denied { connectto } for pid=1898 comm="Thread-15" path="/dev/socket/dnsproxyd" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[   87.542124] type=1400 audit(1509880056.351:358): avc: denied { name_bind } for pid=1083 comm="netd" src=61812 scontext=u:r:init:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[   87.630595] type=1400 audit(1509880056.439:359): avc: denied { use } for pid=1083 comm="netd" path="socket:[12281]" dev="sockfs" ino=12281 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=fd permissive=1
+[   87.630648] type=1400 audit(1509880056.439:360): avc: denied { read write } for pid=1083 comm="netd" path="socket:[12281]" dev="sockfs" ino=12281 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[   87.630676] type=1400 audit(1509880056.439:361): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[   87.630700] type=1400 audit(1509880056.439:362): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[   87.872605] type=1400 audit(1509880056.681:363): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=binder permissive=1
+[   87.879415] type=1400 audit(1509880056.688:364): avc: denied { getattr } for pid=2052 comm="gle.android.gms" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   87.883816] type=1400 audit(1509880056.692:365): avc: denied { read } for pid=2052 comm="ON_EXECUTE_TASK" name="YouTube.apk" dev="sda1" ino=33003 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   95.933306] type=1400 audit(1509880064.742:374): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:radio:s0 tclass=process permissive=1
+[   95.933361] type=1400 audit(1509880064.742:375): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:radio:s0 tclass=binder permissive=1
+[   95.940901] type=1400 audit(1509880064.749:376): avc: denied { getattr } for pid=1507 comm="m.android.phone" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:radio:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   96.312697] type=1400 audit(1509880065.121:377): avc: denied { getattr } for pid=1438 comm="ndroid.systemui" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   96.346482] type=1400 audit(1509880065.155:378): avc: denied { read } for pid=1438 comm="ndroid.systemui" path="/system/priv-app/Settings/Settings.apk" dev="sda1" ino=98311 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[   96.431331] type=1400 audit(1509880065.240:379): avc: denied { getattr } for pid=2252 comm=".android.dialer" path="/system" dev="sda1" ino=32775 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[   97.059833] type=1400 audit(1509880065.868:380): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=binder permissive=1
+[   97.062304] type=1400 audit(1509880065.871:381): avc: denied { dyntransition } for pid=2287 comm="main" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=process permissive=1
+[   97.067526] type=1400 audit(1509880065.876:382): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=binder permissive=1
+[   97.073708] type=1400 audit(1509880065.882:383): avc: denied { getattr } for pid=2273 comm="ndroid.calendar" path="/system" dev="sda1" ino=32775 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[  107.262103] type=1400 audit(1509880076.070:397): avc: denied { setpgid } for pid=1071 comm="main" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=process permissive=1
+[  107.281048] type=1400 audit(1509880076.089:398): avc: denied { getattr } for pid=1521 comm="ndroid.settings" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:system_app:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[  108.174231] type=1400 audit(1509880076.980:399): avc: denied { getattr } for pid=1071 comm="main" path="/sys/kernel/debug/tracing/trace_marker" dev="tracefs" ino=41 scontext=u:r:init:s0 tcontext=u:object_r:debugfs_trace_marker:s0 tclass=file permissive=1
+[  109.048600] type=1400 audit(1509880077.857:400): avc: denied { read write } for pid=1083 comm="netd" path="socket:[14682]" dev="sockfs" ino=14682 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=udp_socket permissive=1
+[  109.048655] type=1400 audit(1509880077.857:401): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=udp_socket permissive=1
+[  109.048689] type=1400 audit(1509880077.857:402): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=udp_socket permissive=1
+[  110.166689] init: Service clear-bcb does not have a SELinux domain defined.
+[  110.166699] init: Starting service 'clear-bcb'...
+[  110.168087] type=1400 audit(1509880078.976:403): avc: denied { execute } for pid=2767 comm="init" name="uncrypt" dev="sda1" ino=41295 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[  110.168333] type=1400 audit(1509880078.976:404): avc: denied { execute_no_trans } for pid=2767 comm="init" path="/system/bin/uncrypt" dev="sda1" ino=41295 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[  110.391052] type=1400 audit(1509880079.199:405): avc: denied { bind } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[  110.391112] type=1400 audit(1509880079.199:406): avc: denied { write } for pid=1083 comm="netd" laddr=10.0.2.15 lport=54211 faddr=10.0.2.3 fport=53 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[  111.168532] init: Service 'clear-bcb' (pid 2767) exited with status 1
+[  111.600058] init: Service clear-bcb does not have a SELinux domain defined.
+[  111.600062] init: Starting service 'clear-bcb'...
+[  112.601986] init: Service 'clear-bcb' (pid 2811) exited with status 1
+[  236.914545] type=1400 audit(1509880205.723:409): avc: denied { read } for pid=2782 comm="IntentService[D" name="app_process" dev="sda1" ino=40978 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+[  236.990940] type=1400 audit(1509880205.799:410): avc: denied { search } for pid=2782 comm="IntentService[D" name="1071" dev="proc" ino=6390 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=dir permissive=1
+[  236.991068] type=1400 audit(1509880205.799:411): avc: denied { read } for pid=2782 comm="IntentService[D" name="stat" dev="proc" ino=8538 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[  236.991130] type=1400 audit(1509880205.800:412): avc: denied { open } for pid=2782 comm="IntentService[D" path="/proc/1071/stat" dev="proc" ino=8538 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[  236.991631] type=1400 audit(1509880205.800:413): avc: denied { read } for pid=2782 comm="IntentService[D" name="/" dev="tmpfs" ino=5138 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[  236.991669] type=1400 audit(1509880205.800:414): avc: denied { open } for pid=2782 comm="IntentService[D" path="/dev" dev="tmpfs" ino=5138 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[  244.813037] type=1400 audit(1509880213.621:415): avc: denied { execute_no_trans } for pid=3039 comm="Binder:2782_3" path="/system/bin/dex2oat" dev="sda1" ino=41029 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[  285.389342] type=1400 audit(1509880254.198:416): avc: denied { call } for pid=1343 comm="Binder:1343_6" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[  463.572413] type=1400 audit(1509880432.381:417): avc: denied { read } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[  662.785948] type=1400 audit(1509880631.594:418): avc: denied { transfer } for pid=1343 comm="PowerManagerSer" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[  662.849655] type=1400 audit(1509880631.658:419): avc: denied { execmem } for pid=1343 comm="PowerManagerSer" scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[  662.984877] type=1400 audit(1509880631.793:420): avc: denied { execmem } for pid=1064 comm="surfaceflinger" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[  663.429125] CPU2: update max cpu_capacity 1024
+[  663.429132] smpboot: CPU 1 is now offline
+[  663.443966] type=1400 audit(1509880632.252:421): avc: denied { read } for pid=1051 comm="vold" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[  663.449636] smpboot: CPU 2 is now offline
+[  663.469516] PM: suspend entry 2017-11-05 11:17:12.279896612 UTC
+[  663.469518] PM: Syncing filesystems ... done.
+[  663.582695] PM: Preparing system for sleep (mem)
+[  663.589471] Freezing user space processes ... 
+[  663.589652] PM: Wakeup pending, aborting suspend
+[  663.589656] last active wakeup source: eventpoll
+[  663.589659] Freezing of tasks aborted after 0.000 seconds
+[  663.589660] Restarting tasks ... done.
+[  663.590064] PM: suspend exit 2017-11-05 11:17:12.400444009 UTC
+[  663.590823] type=1400 audit(1509880632.399:422): avc: denied { sendto } for pid=1827 comm="IntentService[A" path="/dev/socket/logdw" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[  663.591354] type=1400 audit(1509880632.400:423): avc: denied { read } for pid=2052 comm="Binder:2052_B" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E2073706163652031202864656C6574656429 dev="tmpfs" ino=8518 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[  663.690519] PM: suspend entry 2017-11-05 11:17:12.500894085 UTC
+[  663.690526] PM: Syncing filesystems ... done.
+[  663.730926] PM: Preparing system for sleep (mem)
+[  663.735813] Freezing user space processes ... (elapsed 0.001 seconds) done.
+[  663.737375] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[  663.738911] PM: Suspending system (mem)
+[  663.738926] Suspending console(s) (use no_console_suspend to debug)
+[  663.740387] rtc_cmos 00:00: suspend, ctrl 02
+[  663.740390] rtc_cmos 00:00: System wakeup disabled by ACPI
+[  663.740477] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[  663.775924] sd 0:0:0:0: [sda] Stopping disk
+[  663.810746] PM: suspend of devices complete after 71.671 msecs
+[  663.810963] PM: late suspend of devices complete after 0.213 msecs
+[  663.811908] PM: noirq suspend of devices complete after 0.942 msecs
+[  663.811922] ACPI: Preparing to enter system sleep state S3
+[  663.811985] PM: Saving platform NVS memory
+[  663.811986] Disabling non-boot CPUs ...
+[  663.811986] ACPI: Low-level resume complete
+[  663.811986] PM: Restoring platform NVS memory
+[  663.811986] Suspended for 130.000 seconds
+[  663.812191] ACPI: Waking up from system sleep state S3
+[  663.816430] PM: noirq resume of devices complete after 4.170 msecs
+[  663.816648] PM: early resume of devices complete after 0.156 msecs
+[  663.816885] rtc_cmos 00:00: resume, ctrl 22
+[  663.822088] sd 0:0:0:0: [sda] Starting disk
+[  663.822142] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[  663.978537] ata2.01: NODEV after polling detection
+[  663.979153] ata1.01: NODEV after polling detection
+[  663.983791] ata1.00: configured for MWDMA2
+[  663.984154] PM: resume of devices complete after 167.499 msecs
+[  663.984337] PM: Finishing wakeup.
+[  663.984339] Restarting tasks ... done.
+[  663.995645] type=1400 audit(1509880762.803:424): avc: denied { create } for pid=1083 comm="Binder:1083_2" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[  663.995684] type=1400 audit(1509880762.803:425): avc: denied { write } for pid=1083 comm="Binder:1083_2" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[  663.995701] type=1400 audit(1509880762.803:426): avc: denied { nlmsg_write } for pid=1083 comm="Binder:1083_2" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[  664.008104] type=1400 audit(1509880762.804:427): avc: denied { create } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+[  664.021945] ata2.00: configured for MWDMA2
+[  664.022578] PM: suspend exit 2017-11-05 11:19:22.832959182 UTC
+[  664.027220] x86: Booting SMP configuration:
+[  664.027222] smpboot: Booting Node 0 Processor 1 APIC 0x1
+[  664.147264] audit: audit_lost=66 audit_rate_limit=20 audit_backlog_limit=64
+[  664.147265] audit: rate limit exceeded
+[  664.156035] CPU1: update max cpu_capacity 1024
+[  664.159227] smpboot: Booting Node 0 Processor 2 APIC 0x2
+[  664.185473] CPU2: update max cpu_capacity 1024
+[  665.952981] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[  665.994803] init: Service exec 10 (/system/bin/logwrapper) does not have a SELinux domain defined.
+[  665.994806] init: Starting service 'exec 10 (/system/bin/logwrapper)'...
+[  666.009700] init: Service 'exec 10 (/system/bin/logwrapper)' (pid 3227) exited with status 0
+[  668.159327] type=1400 audit(1509880766.968:457): avc: denied { read } for pid=2782 comm="Binder:2782_5" name="stat" dev="proc" ino=8538 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[  668.159399] type=1400 audit(1509880766.968:458): avc: denied { open } for pid=2782 comm="Binder:2782_5" path="/proc/1071/stat" dev="proc" ino=8538 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[  668.537981] type=1400 audit(1509880767.346:459): avc: denied { check_context } for pid=3253 comm="main" scontext=u:r:init:s0 tcontext=u:object_r:kernel:s0 tclass=security permissive=1
+[  669.134903] type=1400 audit(1509880767.943:460): avc: denied { read } for pid=1343 comm="HeapTaskDaemon" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E207370616365202864656C6574656429 dev="tmpfs" ino=8517 scontext=u:r:system_server:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[  669.418361] type=1400 audit(1509880768.227:461): avc: denied { transfer } for pid=3253 comm="RenderThread" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[  669.751066] type=1400 audit(1509880768.559:462): avc: denied { execute_no_trans } for pid=3275 comm="pal.androidterm" path="/system/bin/sh" dev="sda1" ino=41240 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[  669.756236] type=1400 audit(1509880768.565:463): avc: denied { read } for pid=3276 comm="sh" name="getprop" dev="sda1" ino=41074 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+[  669.895039] type=1400 audit(1509880768.703:464): avc: denied { call } for pid=1064 comm="Binder:1064_4" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=binder permissive=1
+[  671.138909] type=1400 audit(1509880769.947:465): avc: denied { use } for pid=1083 comm="netd" path="socket:[19337]" dev="sockfs" ino=19337 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=fd permissive=1
+[  676.189046] type=1400 audit(1509880774.997:466): avc: denied { call } for pid=1507 comm="m.android.phone" scontext=u:r:radio:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[  676.360610] type=1400 audit(1509880775.169:467): avc: denied { write } for pid=3292 comm="su" name="server" dev="tmpfs" ino=6561 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=sock_file permissive=1
+[  676.659279] type=1400 audit(1509880775.468:468): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:su:s0 tclass=process permissive=1
+[  676.659351] type=1400 audit(1509880775.468:469): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:su:s0 tclass=binder permissive=1
+[  676.684844] type=1400 audit(1509880775.493:470): avc: denied { dyntransition } for pid=3309 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=process permissive=1
+[  676.685902] type=1400 audit(1509880775.494:471): avc: denied { sendto } for pid=3309 comm="tings:superuse" path="/dev/socket/logdw" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[  676.688402] type=1400 audit(1509880775.497:472): avc: denied { call } for pid=3309 comm="re-initialized>" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[  676.688610] type=1400 audit(1509880775.497:473): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=process permissive=1
+[  676.688633] type=1400 audit(1509880775.497:474): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=binder permissive=1
+[  676.688979] type=1400 audit(1509880775.497:475): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=11322 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=file permissive=1
+[  677.007433] audit: audit_lost=71 audit_rate_limit=20 audit_backlog_limit=64
+[  677.007435] audit: rate limit exceeded
+[  701.190579] type=1400 audit(1509880800.000:497): avc: denied { wake_alarm } for pid=1343 comm="AlarmManager" capability=35 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=capability2 permissive=1
+[  798.080985] type=1400 audit(1509893497.753:498): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[  798.104992] type=1400 audit(1509893497.777:499): avc: denied { connectto } for pid=2052 comm="EventLogService" path="/dev/socket/logdr" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[  875.761065] type=1400 audit(1509893575.433:500): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=process permissive=1
+[ 1021.880397] init: Untracked pid 3295 exited with status 127
+[ 1030.681660] type=1400 audit(1509893730.354:501): avc: denied { setpcap } for pid=3382 comm="main" capability=8 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[ 1030.682143] type=1400 audit(1509893730.354:502): avc: denied { getpgid } for pid=1072 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[ 1030.682366] type=1400 audit(1509893730.355:503): avc: denied { setcurrent } for pid=3382 comm="main" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[ 1030.682433] type=1400 audit(1509893730.355:504): avc: denied { dyntransition } for pid=3382 comm="main" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=process permissive=1
+[ 1030.733547] type=1400 audit(1509893730.406:505): avc: denied { getattr } for pid=3382 comm=".android.chrome" path="/system/app/Chrome/Chrome.apk" dev="sda1" ino=32833 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1030.748395] type=1400 audit(1509893730.421:506): avc: denied { getattr } for pid=3382 comm=".android.chrome" path="/system" dev="sda1" ino=32775 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[ 1030.748432] type=1400 audit(1509893730.421:507): avc: denied { read } for pid=3382 comm=".android.chrome" name="Chrome.apk" dev="sda1" ino=32833 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1030.748449] type=1400 audit(1509893730.421:508): avc: denied { open } for pid=3382 comm=".android.chrome" path="/system/app/Chrome/Chrome.apk" dev="sda1" ino=32833 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1030.973978] type=1400 audit(1509893730.646:509): avc: denied { write } for pid=1064 comm="Binder:1064_5" path="socket:[20448]" dev="sockfs" ino=20448 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 1031.480649] type=1400 audit(1509893731.153:510): avc: denied { execute } for pid=3382 comm="Thread-2" path="/system/app/Chrome/Chrome.apk" dev="sda1" ino=32833 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1036.763586] type=1400 audit(1509893736.436:544): avc: denied { call } for pid=1064 comm="Binder:1064_1" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=binder permissive=1
+[ 1037.054216] type=1400 audit(1509893736.727:545): avc: denied { dyntransition } for pid=3489 comm="main" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[ 1037.181266] type=1400 audit(1509893736.854:546): avc: denied { getattr } for pid=3489 comm="id.partnersetup" path="/system" dev="sda1" ino=32775 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[ 1037.181406] type=1400 audit(1509893736.854:547): avc: denied { read } for pid=3489 comm="id.partnersetup" name="GooglePartnerSetup.odex" dev="sda1" ino=90179 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1037.181445] type=1400 audit(1509893736.854:548): avc: denied { open } for pid=3489 comm="id.partnersetup" path="/system/priv-app/GooglePartnerSetup/oat/x86_64/GooglePartnerSetup.odex" dev="sda1" ino=90179 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1037.181592] type=1400 audit(1509893736.854:549): avc: denied { execute } for pid=3489 comm="id.partnersetup" path="/system/priv-app/GooglePartnerSetup/oat/x86_64/GooglePartnerSetup.odex" dev="sda1" ino=90179 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1037.222428] type=1400 audit(1509893736.867:550): avc: denied { execute } for pid=3409 comm="ChildProcessMai" path="/system/app/Chrome/Chrome.apk" dev="sda1" ino=32833 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1037.223460] type=1400 audit(1509893736.896:551): avc: denied { read write } for pid=1083 comm="netd" path="socket:[20676]" dev="sockfs" ino=20676 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1037.223515] type=1400 audit(1509893736.896:552): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1037.223552] type=1400 audit(1509893736.896:553): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1048.633874] type=1400 audit(1509893748.306:556): avc: denied { read write } for pid=1083 comm="netd" path="socket:[22776]" dev="sockfs" ino=22776 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=udp_socket permissive=1
+[ 1048.633929] type=1400 audit(1509893748.306:557): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=udp_socket permissive=1
+[ 1048.633959] type=1400 audit(1509893748.306:558): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=udp_socket permissive=1
+[ 1079.141475] type=1400 audit(1509893778.814:559): avc: denied { read } for pid=1438 comm="ndroid.systemui" path=2F6465762F6173686D656D2F64616C76696B2D6E6F6E206D6F76696E67207370616365202864656C6574656429 dev="tmpfs" ino=8038 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 1079.443120] type=1400 audit(1509893779.115:560): avc: denied { call } for pid=1343 comm="system_server" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1079.443663] type=1400 audit(1509893779.116:561): avc: denied { sendto } for pid=1343 comm="system_server" path="/dev/socket/logdw" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 1079.468960] type=1400 audit(1509893779.141:562): avc: denied { transfer } for pid=1343 comm="android.display" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1079.797899] type=1400 audit(1509893779.470:563): avc: denied { read } for pid=3382 comm="Binder:3382_5" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E207370616365202864656C6574656429 dev="tmpfs" ino=5934 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 1081.110724] type=1400 audit(1509893780.783:564): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=process permissive=1
+[ 1081.110765] type=1400 audit(1509893780.783:565): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=binder permissive=1
+[ 1081.148899] type=1400 audit(1509893780.821:566): avc: denied { transfer } for pid=1438 comm="RenderThread" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1081.149319] type=1400 audit(1509893780.821:567): avc: denied { call } for pid=1064 comm="Binder:1064_3" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=binder permissive=1
+[ 1082.351965] type=1400 audit(1509893782.025:568): avc: denied { read } for pid=2172 comm="HeapTaskDaemon" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E2073706163652031202864656C6574656429 dev="tmpfs" ino=8518 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 1090.323316] type=1400 audit(1509893789.995:569): avc: denied { execute_no_trans } for pid=3632 comm="pal.androidterm" path="/system/bin/sh" dev="sda1" ino=41240 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1090.344971] type=1400 audit(1509893790.017:570): avc: denied { read } for pid=3637 comm="sh" name="getprop" dev="sda1" ino=41074 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+[ 1194.474176] type=1400 audit(1509893894.147:571): avc: denied { dyntransition } for pid=3660 comm="main" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=process permissive=1
+[ 1194.477984] type=1400 audit(1509893894.150:572): avc: denied { call } for pid=3382 comm="RenderThread" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1194.478959] type=1400 audit(1509893894.151:573): avc: denied { sendto } for pid=3660 comm="ackageinstalle" path="/dev/socket/logdw" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 1194.479121] type=1400 audit(1509893894.152:574): avc: denied { call } for pid=1438 comm="RenderThread" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1194.676956] type=1400 audit(1509893894.349:575): avc: denied { transfer } for pid=1438 comm="RenderThread" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1195.157737] type=1400 audit(1509893894.830:576): avc: denied { write } for pid=1064 comm="Binder:1064_2" path="socket:[23234]" dev="sockfs" ino=23234 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 1195.160626] type=1400 audit(1509893894.833:577): avc: denied { call } for pid=2172 comm="Binder:2172_A" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1200.584694] type=1400 audit(1509893900.254:578): avc: denied { read } for pid=1343 comm="PackageInstalle" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E207370616365202864656C6574656429 dev="tmpfs" ino=8517 scontext=u:r:system_server:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 1200.878324] type=1400 audit(1509893900.551:579): avc: denied { check_context } for pid=3687 comm="main" scontext=u:r:init:s0 tcontext=u:object_r:kernel:s0 tclass=security permissive=1
+[ 1200.966865] type=1400 audit(1509893900.639:580): avc: denied { sendto } for pid=2374 comm="android.vending" path="/dev/socket/logdw" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 1201.050450] type=1400 audit(1509893900.723:581): avc: denied { execute } for pid=3704 comm="installd" name="dex2oat" dev="sda1" ino=41029 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1201.050662] type=1400 audit(1509893900.723:582): avc: denied { execute_no_trans } for pid=3704 comm="installd" path="/system/bin/dex2oat" dev="sda1" ino=41029 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1201.115223] type=1400 audit(1509893900.788:583): avc: denied { read } for pid=3704 comm="dex2oat" name="system@framework@boot.oat" dev="sda1" ino=131170 scontext=u:r:init:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=lnk_file permissive=1
+[ 1205.082933] type=1400 audit(1509893904.753:584): avc: denied { getattr } for pid=1077 comm="installd" name="org.fdroid.fdroid" dev="sda1" ino=149007 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 1205.082975] type=1400 audit(1509893904.753:585): avc: denied { read } for pid=1077 comm="installd" name="org.fdroid.fdroid" dev="sda1" ino=149007 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 1205.082994] type=1400 audit(1509893904.753:586): avc: denied { open } for pid=1077 comm="installd" path="/data/data/org.fdroid.fdroid" dev="sda1" ino=149007 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 1205.083031] type=1400 audit(1509893904.753:587): avc: denied { write } for pid=1077 comm="installd" name="org.fdroid.fdroid" dev="sda1" ino=149007 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 1205.848565] type=1400 audit(1509893905.521:594): avc: denied { getattr } for pid=1507 comm="m.android.phone" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:radio:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1268.573276] type=1400 audit(1509893968.245:595): avc: denied { read } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[ 1301.261088] type=1400 audit(1509894000.933:596): avc: denied { use } for pid=1083 comm="netd" path="socket:[21280]" dev="sockfs" ino=21280 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=fd permissive=1
+[ 1301.261186] type=1400 audit(1509894000.933:597): avc: denied { read write } for pid=1083 comm="netd" path="socket:[21280]" dev="sockfs" ino=21280 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1301.261241] type=1400 audit(1509894000.933:598): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1301.261287] type=1400 audit(1509894000.933:599): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1374.887148] type=1400 audit(1509894074.560:600): avc: denied { transfer } for pid=3767 comm="RenderThread" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1375.246174] type=1400 audit(1509894074.916:601): avc: denied { use } for pid=1083 comm="netd" path="socket:[21347]" dev="sockfs" ino=21347 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=fd permissive=1
+[ 1375.246250] type=1400 audit(1509894074.916:602): avc: denied { read write } for pid=1083 comm="netd" path="socket:[21347]" dev="sockfs" ino=21347 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1375.246285] type=1400 audit(1509894074.916:603): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1375.246316] type=1400 audit(1509894074.916:604): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1486.131245] type=1400 audit(1509894185.804:605): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=11322 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=file permissive=1
+[ 1531.232216] type=1400 audit(1509894230.905:606): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=21218 scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=file permissive=1
+[ 1531.242993] type=1400 audit(1509894230.915:607): avc: denied { execute } for pid=3891 comm="installd" name="dex2oat" dev="sda1" ino=41029 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1531.243186] type=1400 audit(1509894230.916:608): avc: denied { execute_no_trans } for pid=3891 comm="installd" path="/system/bin/dex2oat" dev="sda1" ino=41029 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1576.647091] type=1400 audit(1509894276.319:609): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=process permissive=1
+[ 1597.480854] type=1400 audit(1509894297.153:610): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=9935 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=file permissive=1
+[ 1631.052804] type=1400 audit(1509894330.725:611): avc: denied { read write } for pid=1064 comm="Binder:1064_4" path="socket:[32802]" dev="sockfs" ino=32802 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 1631.052863] type=1400 audit(1509894330.725:612): avc: denied { read } for pid=1006 comm="logd.auditd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_audit_socket permissive=1
+[ 1631.077150] type=1400 audit(1509894330.747:613): avc: denied { transfer } for pid=1768 comm="RenderThread" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1631.371076] type=1400 audit(1509894331.043:614): avc: denied { call } for pid=1064 comm="Binder:1064_1" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=binder permissive=1
+[ 1633.741721] type=1400 audit(1509894333.414:615): avc: denied { call } for pid=1073 comm="Binder:1073_2" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1633.741993] type=1400 audit(1509894333.414:616): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1635.780700] type=1400 audit(1509894335.453:617): avc: denied { read write } for pid=1083 comm="netd" path="socket:[32905]" dev="sockfs" ino=32905 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=udp_socket permissive=1
+[ 1635.780782] type=1400 audit(1509894335.453:618): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=udp_socket permissive=1
+[ 1635.780825] type=1400 audit(1509894335.453:619): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=udp_socket permissive=1
+[ 1636.094299] type=1400 audit(1509894335.767:620): avc: denied { setpcap } for pid=4051 comm="main" capability=8 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[ 1636.094695] type=1400 audit(1509894335.767:621): avc: denied { setcurrent } for pid=4051 comm="main" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[ 1636.097896] type=1400 audit(1509894335.770:622): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[ 1636.181268] type=1400 audit(1509894335.854:623): avc: denied { call } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[ 1636.181340] type=1400 audit(1509894335.854:624): avc: denied { connectto } for pid=1768 comm="ChromiumNet" path="/dev/socket/fwmarkd" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 1636.182859] type=1400 audit(1509894335.855:625): avc: denied { read } for pid=1438 comm="ndroid.systemui" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 1636.496282] type=1400 audit(1509894336.169:626): avc: denied { read } for pid=1768 comm="earchbox:search" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 1636.509619] type=1400 audit(1509894336.182:627): avc: denied { read } for pid=1343 comm="android.display" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 1636.511145] type=1400 audit(1509894336.183:628): avc: denied { transfer } for pid=1064 comm="Binder:1064_3" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[ 1636.583131] type=1400 audit(1509894336.256:629): avc: denied { read } for pid=3925 comm="com.termux" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 1672.796181] type=1400 audit(1509894372.469:640): avc: denied { write } for pid=4125 comm="su" name="server" dev="tmpfs" ino=6561 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=sock_file permissive=1
+[ 1673.079591] type=1400 audit(1509894372.752:641): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:su:s0 tclass=process permissive=1
+[ 1673.079629] type=1400 audit(1509894372.752:642): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:su:s0 tclass=binder permissive=1
+[ 1673.086299] type=1400 audit(1509894372.759:643): avc: denied { getpgid } for pid=1071 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[ 1673.086501] type=1400 audit(1509894372.759:644): avc: denied { dyntransition } for pid=4141 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=process permissive=1
+[ 1673.090153] type=1400 audit(1509894372.763:645): avc: denied { call } for pid=4141 comm="re-initialized>" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1673.090324] type=1400 audit(1509894372.763:646): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=process permissive=1
+[ 1673.090350] type=1400 audit(1509894372.763:647): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=binder permissive=1
+[ 1673.094686] type=1400 audit(1509894372.767:648): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=33247 scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=file permissive=1
+[ 1673.097834] type=1400 audit(1509894372.770:649): avc: denied { getattr } for pid=4141 comm="tings:superuser" path="/system/priv-app/Settings/Settings.apk" dev="sda1" ino=98311 scontext=u:r:system_app:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1680.190938] type=1400 audit(1509894379.863:661): avc: denied { call } for pid=1064 comm="Binder:1064_4" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=binder permissive=1
+[ 1682.883623] type=1400 audit(1509894382.556:662): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=binder permissive=1
+[ 1696.015248] type=1400 audit(1509894395.688:663): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=22650 scontext=u:r:init:s0 tcontext=u:r:isolated_app:s0:c512,c768 tclass=file permissive=1
+[ 1696.015781] type=1400 audit(1509894395.688:664): avc: denied { getattr } for pid=1768 comm="earchbox:search" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1696.017221] type=1400 audit(1509894395.690:665): avc: denied { read } for pid=1768 comm="earchbox:search" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1696.066387] type=1400 audit(1509894395.739:666): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=binder permissive=1
+[ 1696.098840] type=1400 audit(1509894395.771:667): avc: denied { call } for pid=1064 comm="Binder:1064_4" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=binder permissive=1
+[ 1696.289913] type=1400 audit(1509894395.962:668): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[ 1696.408961] type=1400 audit(1509894396.076:669): avc: denied { call } for pid=1073 comm="Binder:1073_3" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1696.409187] type=1400 audit(1509894396.076:670): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1696.415448] type=1400 audit(1509894396.076:671): avc: denied { call } for pid=1073 comm="ApmOutput" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=binder permissive=1
+[ 1741.523685] type=1400 audit(1509894441.196:672): avc: denied { read } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[ 1757.314856] type=1400 audit(1509894456.987:673): avc: denied { read } for pid=3925 comm="com.termux" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1776.399624] type=1400 audit(1509894476.072:674): avc: denied { getattr } for pid=3382 comm=".android.chrome" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 1776.432723] type=1400 audit(1509894476.105:675): avc: denied { connectto } for pid=3382 comm=4173796E635461736B202339 path="/dev/socket/dnsproxyd" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 1776.432971] type=1400 audit(1509894476.105:676): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 1776.433118] type=1400 audit(1509894476.106:677): avc: denied { setattr } for pid=1083 comm="netd" name="UDPv6" dev="sockfs" ino=33601 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 1776.433176] type=1400 audit(1509894476.106:678): avc: denied { connect } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 1776.433364] type=1400 audit(1509894476.106:679): avc: denied { bind } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 1776.433425] type=1400 audit(1509894476.106:680): avc: denied { write } for pid=1083 comm="netd" laddr=10.0.2.15 lport=44272 faddr=10.0.2.3 fport=53 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 1776.520923] type=1400 audit(1509894476.193:681): avc: denied { getopt } for pid=1083 comm="netd" laddr=10.0.2.15 lport=44272 faddr=10.0.2.3 fport=53 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 1776.521002] type=1400 audit(1509894476.193:682): avc: denied { read } for pid=1083 comm="netd" laddr=10.0.2.15 lport=44272 faddr=10.0.2.3 fport=53 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 1776.616987] type=1400 audit(1509894476.289:683): avc: denied { dyntransition } for pid=4240 comm="main" scontext=u:r:init:s0 tcontext=u:r:isolated_app:s0:c512,c768 tclass=process permissive=1
+[ 1782.128249] type=1400 audit(1509894481.801:705): avc: denied { read } for pid=3382 comm="HeapTaskDaemon" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E2073706163652031202864656C6574656429 dev="tmpfs" ino=5935 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 1782.486088] type=1400 audit(1509894482.158:706): avc: denied { read } for pid=4217 comm="HeapTaskDaemon" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E2073706163652031202864656C6574656429 dev="tmpfs" ino=8518 scontext=u:r:system_app:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 1788.405771] type=1400 audit(1509894488.078:707): avc: denied { sendto } for pid=3382 comm=".android.chrome" path="/dev/socket/logdw" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 1800.043571] type=1400 audit(1509894499.715:708): avc: denied { sendto } for pid=1507 comm="m.android.phone" path="/dev/socket/logdw" scontext=u:r:radio:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 1801.071880] type=1400 audit(1509894500.744:709): avc: denied { call } for pid=1438 comm="ndroid.systemui" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1805.331419] type=1400 audit(1509894505.004:710): avc: denied { setpgid } for pid=1072 comm="main" scontext=u:r:init:s0 tcontext=u:r:isolated_app:s0:c512,c768 tclass=process permissive=1
+[ 1805.376238] type=1400 audit(1509894505.047:711): avc: denied { getattr } for pid=4294 comm="dboxed_process3" path="/data/data/com.android.chrome" dev="sda1" ino=131551 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 1807.349994] type=1400 audit(1509894507.022:712): avc: denied { transfer } for pid=3382 comm="RenderThread" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 1808.277728] type=1400 audit(1509894507.950:713): avc: denied { sendto } for pid=2052 comm="lowpool[1]" path="/dev/socket/logdw" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 1810.413028] binder_alloc: 4240: binder_alloc_buf, no vma
+[ 1810.413031] binder: 1343:3808 transaction failed 29189/-3, size 76-0 line 3062
+[ 1825.000372] type=1400 audit(1509894524.673:714): avc: denied { read write } for pid=1083 comm="netd" path="socket:[33769]" dev="sockfs" ino=33769 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1825.000412] type=1400 audit(1509894524.673:715): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1825.000430] type=1400 audit(1509894524.673:716): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 1998.380425] init: Untracked pid 4128 exited with status 127
+[ 2000.181908] type=1400 audit(1509894699.854:717): avc: denied { execute } for pid=4354 comm="bash" name="linker64" dev="sda1" ino=41113 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 2000.183266] type=1400 audit(1509894699.856:718): avc: denied { getattr } for pid=4354 comm="apt" path="/system" dev="sda1" ino=32775 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[ 2017.048661] type=1400 audit(1509894716.721:719): avc: denied { getattr } for pid=4402 comm="ls" path="/ueventd.rc" dev="tmpfs" ino=4380 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:tmpfs:s0 tclass=file permissive=1
+[ 2063.300450] type=1400 audit(1509894762.973:720): avc: denied { read } for pid=4429 comm="tree" name="/" dev="cgroup" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:cgroup:s0 tclass=dir permissive=1
+[ 2063.300630] type=1400 audit(1509894762.973:721): avc: denied { open } for pid=4429 comm="tree" path="/acct" dev="cgroup" ino=1 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:cgroup:s0 tclass=dir permissive=1
+[ 2063.302573] type=1400 audit(1509894762.975:722): avc: denied { read } for pid=4429 comm="tree" name="/" dev="configfs" ino=5202 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:configfs:s0 tclass=dir permissive=1
+[ 2063.302637] type=1400 audit(1509894762.975:723): avc: denied { open } for pid=4429 comm="tree" path="/config" dev="configfs" ino=5202 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:configfs:s0 tclass=dir permissive=1
+[ 2063.302763] type=1400 audit(1509894762.975:724): avc: denied { getattr } for pid=4429 comm="tree" path="/config/sdcardfs/remove_userid" dev="configfs" ino=35629 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:configfs:s0 tclass=file permissive=1
+[ 2063.302961] type=1400 audit(1509894762.975:725): avc: denied { read } for pid=4429 comm="tree" name="/" dev="tmpfs" ino=5138 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[ 2063.304912] audit: audit_lost=74 audit_rate_limit=20 audit_backlog_limit=64
+[ 2063.304913] audit: rate limit exceeded
+[ 2063.316545] type=1400 audit(1509894762.976:726): avc: denied { open } for pid=4429 comm="tree" path="/dev" dev="tmpfs" ino=5138 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[ 2063.316584] type=1400 audit(1509894762.976:727): avc: denied { getattr } for pid=4429 comm="tree" path="/dev/cpu2" dev="tmpfs" ino=17978 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[ 2063.316602] type=1400 audit(1509894762.976:728): avc: denied { getattr } for pid=4429 comm="tree" path="/dev/vcsa63" dev="tmpfs" ino=17879 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:vcs_device:s0 tclass=chr_file permissive=1
+[ 2063.316618] type=1400 audit(1509894762.976:729): avc: denied { getattr } for pid=4429 comm="tree" path="/dev/fscklogs" dev="tmpfs" ino=5266 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:fscklogs:s0 tclass=dir permissive=1
+[ 2106.034325] type=1400 audit(1509894805.707:850): avc: denied { use } for pid=1083 comm="netd" path="socket:[36225]" dev="sockfs" ino=36225 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=fd permissive=1
+[ 2201.327993] type=1400 audit(1509894901.000:851): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=18011 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=file permissive=1
+[ 2203.584445] type=1400 audit(1509894903.257:852): avc: denied { use } for pid=1083 comm="netd" path="socket:[36331]" dev="sockfs" ino=36331 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=fd permissive=1
+[ 2203.584549] type=1400 audit(1509894903.257:853): avc: denied { read write } for pid=1083 comm="netd" path="socket:[36331]" dev="sockfs" ino=36331 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 2203.584611] type=1400 audit(1509894903.257:854): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 2203.584660] type=1400 audit(1509894903.257:855): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 2313.819528] type=1400 audit(1509895013.492:856): avc: denied { sendto } for pid=1438 comm="ndroid.systemui" path="/dev/socket/logdw" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 2314.442822] type=1400 audit(1509895014.115:857): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=process permissive=1
+[ 2314.442873] type=1400 audit(1509895014.115:858): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=binder permissive=1
+[ 2314.442936] type=1400 audit(1509895014.115:859): avc: denied { read } for pid=1006 comm="logd.auditd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_audit_socket permissive=1
+[ 2314.478522] type=1400 audit(1509895014.151:860): avc: denied { transfer } for pid=1438 comm="RenderThread" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 2346.667447] type=1400 audit(1509895046.340:861): avc: denied { wake_alarm } for pid=1343 comm="AlarmManager" capability=35 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=capability2 permissive=1
+[ 2346.667893] type=1400 audit(1509895046.340:862): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=9631 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=file permissive=1
+[ 2346.672864] type=1400 audit(1509895046.345:863): avc: denied { call } for pid=1919 comm="GCMWriter" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 2346.682238] type=1400 audit(1509895046.355:864): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=process permissive=1
+[ 2346.957696] type=1400 audit(1509895046.630:865): avc: denied { execute } for pid=1080 comm="Binder:1080_3" path="/system/vendor/lib/mediadrm/libdrmclearkeyplugin.so" dev="sda1" ino=106706 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 2347.108513] type=1400 audit(1509895046.780:866): avc: denied { read } for pid=3925 comm="com.termux" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 2347.108626] type=1400 audit(1509895046.781:867): avc: denied { call } for pid=1064 comm="EventThread" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[ 2351.463280] type=1400 audit(1509895051.136:868): avc: denied { getattr } for pid=4051 comm="Binder:4051_4" path="/system/vendor/lib/egl" dev="sda1" ino=106689 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[ 2351.463340] type=1400 audit(1509895051.136:869): avc: denied { read } for pid=4051 comm="Binder:4051_4" name="egl" dev="sda1" ino=106689 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[ 2351.463383] type=1400 audit(1509895051.136:870): avc: denied { open } for pid=4051 comm="Binder:4051_4" path="/system/vendor/lib/egl" dev="sda1" ino=106689 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[ 2351.757501] type=1400 audit(1509895051.430:872): avc: denied { search } for pid=4051 comm="Binder:4051_4" name="1071" dev="proc" ino=6390 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=dir permissive=1
+[ 2351.757543] type=1400 audit(1509895051.430:873): avc: denied { read } for pid=4051 comm="Binder:4051_4" name="stat" dev="proc" ino=8538 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[ 2351.757566] type=1400 audit(1509895051.430:874): avc: denied { open } for pid=4051 comm="Binder:4051_4" path="/proc/1071/stat" dev="proc" ino=8538 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[ 2351.765755] type=1400 audit(1509895051.438:875): avc: denied { read } for pid=4051 comm="Binder:4051_4" name="/" dev="tmpfs" ino=5138 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[ 2351.765895] type=1400 audit(1509895051.438:876): avc: denied { open } for pid=4051 comm="Binder:4051_4" path="/dev" dev="tmpfs" ino=5138 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[ 2351.780687] type=1400 audit(1509895051.453:877): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[ 2351.802681] type=1400 audit(1509895051.475:878): avc: denied { connectto } for pid=1919 comm="highpool[2]" path="/dev/socket/dnsproxyd" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 2356.803304] type=1400 audit(1509895056.476:879): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=33247 scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=file permissive=1
+[ 2368.262097] type=1400 audit(1509895067.934:880): avc: denied { read } for pid=1438 comm="ndroid.systemui" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 2375.971449] type=1400 audit(1509895075.644:881): avc: denied { transfer } for pid=1064 comm="Binder:1064_2" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[ 2416.065375] type=1400 audit(1509895115.738:882): avc: denied { read } for pid=1343 comm="ConnectivitySer" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E207370616365202864656C6574656429 dev="tmpfs" ino=8517 scontext=u:r:system_server:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 2416.106179] type=1400 audit(1509895115.773:883): avc: denied { read } for pid=1343 comm="android.display" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 2605.337401] type=1400 audit(1509895305.010:884): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=21218 scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=file permissive=1
+[ 2625.849609] type=1400 audit(1509895325.522:885): avc: denied { open } for pid=1438 comm="ndroid.systemui" path="/system/priv-app/Settings/Settings.apk" dev="sda1" ino=98311 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 2626.466039] type=1400 audit(1509895326.138:886): avc: denied { call } for pid=4181 comm="ndroid.settings" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 2626.466098] type=1400 audit(1509895326.138:887): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=process permissive=1
+[ 2626.513269] type=1400 audit(1509895326.186:888): avc: denied { sendto } for pid=4181 comm=4173796E635461736B202331 path="/dev/socket/logdw" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 2626.520412] type=1400 audit(1509895326.193:889): avc: denied { setpcap } for pid=4594 comm="main" capability=8 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[ 2626.521227] type=1400 audit(1509895326.194:890): avc: denied { check_context } for pid=4594 comm="main" scontext=u:r:init:s0 tcontext=u:object_r:kernel:s0 tclass=security permissive=1
+[ 2626.521310] type=1400 audit(1509895326.194:891): avc: denied { setcurrent } for pid=4594 comm="main" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[ 2626.521365] type=1400 audit(1509895326.194:892): avc: denied { dyntransition } for pid=4594 comm="main" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=process permissive=1
+[ 2626.523664] type=1400 audit(1509895326.196:893): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=binder permissive=1
+[ 2626.530521] type=1400 audit(1509895326.203:894): avc: denied { read } for pid=4181 comm="ndroid.settings" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 2638.461359] type=1400 audit(1509895338.134:918): avc: denied { read } for pid=3687 comm="Binder:3687_4" name="libdefcontainer_jni.so" dev="sda1" ino=81937 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+[ 2638.609607] type=1400 audit(1509895338.282:919): avc: denied { read open } for pid=4181 comm="MemoryMeasureme" path="/data/media/0" dev="sda1" ino=147502 scontext=u:r:system_app:s0 tcontext=u:object_r:media_rw_data_file:s0 tclass=dir permissive=1
+[ 2638.616092] type=1400 audit(1509895338.288:920): avc: denied { read } for pid=1077 comm="installd" name="com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 2638.616146] type=1400 audit(1509895338.289:921): avc: denied { open } for pid=1077 comm="installd" path="/data/data/com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 2638.616177] type=1400 audit(1509895338.289:922): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 2638.767999] type=1400 audit(1509895338.440:923): avc: denied { getattr } for pid=1343 comm="PackageManager" path="/data/media" dev="sda1" ino=131137 scontext=u:r:system_server:s0 tcontext=u:object_r:media_rw_data_file:s0 tclass=dir permissive=1
+[ 2638.812517] type=1400 audit(1509895338.485:924): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.google.android.youtube/cache/1489418796403.tmp" dev="sda1" ino=131847 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=1
+[ 2638.812850] type=1400 audit(1509895338.485:925): avc: denied { getattr } for pid=4181 comm="Binder:4181_1" path="/data/media" dev="sda1" ino=131137 scontext=u:r:system_app:s0 tcontext=u:object_r:media_rw_data_file:s0 tclass=dir permissive=1
+[ 2639.261225] type=1400 audit(1509895338.932:926): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.google.android.googlequicksearchbox/lib" dev="sda1" ino=131270 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0 tclass=lnk_file permissive=1
+[ 2641.577541] type=1400 audit(1509895341.250:927): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/org.fdroid.fdroid/files/fdroid/repo/index.html" dev="sda1" ino=149034 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=lnk_file permissive=1
+[ 2655.998424] type=1400 audit(1509895355.671:928): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=22650 scontext=u:r:init:s0 tcontext=u:r:isolated_app:s0:c512,c768 tclass=file permissive=1
+[ 2658.484685] type=1400 audit(1509895358.157:929): avc: denied { write } for pid=1064 comm="Binder:1064_3" path="socket:[50592]" dev="sockfs" ino=50592 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 2658.540973] type=1400 audit(1509895358.213:930): avc: denied { call } for pid=1064 comm="Binder:1064_1" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=binder permissive=1
+[ 2721.786865] type=1400 audit(1509895421.458:931): avc: denied { read } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[ 2735.403144] init: Service exec 11 (/system/bin/logcat) does not have a SELinux domain defined.
+[ 2735.403150] init: Starting service 'exec 11 (/system/bin/logcat)'...
+[ 2735.413164] type=1400 audit(1509895435.086:932): avc: denied { execute_no_trans } for pid=4687 comm="init" path="/system/bin/logcat" dev="sda1" ino=41118 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 2735.479248] init: Service 'exec 11 (/system/bin/logcat)' (pid 4687) exited with status 1
+[ 2823.544047] type=1400 audit(1509895523.216:933): avc: denied { sendto } for pid=3530 comm="dboxed_process1" path="/dev/socket/logdw" scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 2823.604148] type=1400 audit(1509895523.277:934): avc: denied { read } for pid=1768 comm="earchbox:search" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 2823.606581] binder_alloc: 3382: binder_alloc_buf, no vma
+[ 2823.606584] binder: 1343:1364 transaction failed 29189/-3, size 116-0 line 3062
+[ 2823.618931] binder_alloc: 4051: binder_alloc_buf, no vma
+[ 2823.618935] binder: 1343:1364 transaction failed 29189/-3, size 116-0 line 3062
+[ 2823.669711] binder_alloc: 1433: binder_alloc_buf, no vma
+[ 2823.669714] binder: 1343:3005 transaction failed 29189/-3, size 244-0 line 3062
+[ 2823.697182] binder: undelivered transaction 377463, process died.
+[ 2823.697235] binder: undelivered transaction 377328, process died.
+[ 2823.722195] binder: 1343:1395 transaction failed 29189/-22, size 348-0 line 2939
+[ 2823.744219] binder: undelivered transaction 377467, process died.
+[ 2823.744250] binder: undelivered transaction 377334, process died.
+[ 2823.744343] binder: undelivered transaction 377453, process died.
+[ 2823.744354] binder: undelivered transaction 377422, process died.
+[ 2823.744740] binder: undelivered transaction 377248, process died.
+[ 2823.744742] binder: undelivered transaction 377318, process died.
+[ 2823.744743] binder: undelivered transaction 377418, process died.
+[ 2823.746074] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.757374] binder: undelivered transaction 377460, process died.
+[ 2823.757556] binder: undelivered transaction 377325, process died.
+[ 2823.758161] binder: undelivered transaction 377340, process died.
+[ 2823.758699] binder: 1343:1395 transaction failed 29189/-22, size 348-0 line 2939
+[ 2823.793851] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.794120] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.794349] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.794522] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.794670] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.794812] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.794958] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.795183] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.795319] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.795457] binder: 1343:1343 transaction failed 29189/-22, size 100-0 line 2939
+[ 2823.862207] init: Service exec 12 (/system/bin/logcat) does not have a SELinux domain defined.
+[ 2823.862211] init: Starting service 'exec 12 (/system/bin/logcat)'...
+[ 2823.865834] init: Service 'exec 12 (/system/bin/logcat)' (pid 4807) exited with status 1
+[ 2823.940137] init: Service exec 13 (/system/bin/logcat) does not have a SELinux domain defined.
+[ 2823.940142] init: Starting service 'exec 13 (/system/bin/logcat)'...
+[ 2823.962406] init: Service 'exec 13 (/system/bin/logcat)' (pid 4808) exited with status 1
+[ 2826.929927] type=1400 audit(1509895526.601:935): avc: denied { getattr } for pid=1071 comm="main" path="/sys/kernel/debug/tracing/trace_marker" dev="tracefs" ino=41 scontext=u:r:init:s0 tcontext=u:object_r:debugfs_trace_marker:s0 tclass=file permissive=1
+[ 2826.930662] type=1400 audit(1509895526.603:936): avc: denied { setpgid } for pid=1071 comm="main" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=process permissive=1
+[ 2826.957369] type=1400 audit(1509895526.630:937): avc: denied { read } for pid=4820 comm="putmethod.latin" name="libjni_latinime.so" dev="sda1" ino=32923 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+[ 2828.775833] type=1400 audit(1509895528.448:938): avc: denied { dyntransition } for pid=4840 comm="main" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[ 2828.783299] type=1400 audit(1509895528.456:939): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=binder permissive=1
+[ 2828.786687] type=1400 audit(1509895528.459:940): avc: denied { getattr } for pid=4840 comm=".gms.persistent" path="/system/framework/com.android.location.provider.jar" dev="sda1" ino=41737 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 2828.786780] type=1400 audit(1509895528.459:941): avc: denied { getattr } for pid=4840 comm=".gms.persistent" path="/system" dev="sda1" ino=32775 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[ 2828.786883] type=1400 audit(1509895528.459:942): avc: denied { read } for pid=4840 comm=".gms.persistent" name="com.android.location.provider.odex" dev="sda1" ino=41793 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 2828.786915] type=1400 audit(1509895528.459:943): avc: denied { open } for pid=4840 comm=".gms.persistent" path="/system/framework/oat/x86_64/com.android.location.provider.odex" dev="sda1" ino=41793 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 2828.787135] type=1400 audit(1509895528.460:944): avc: denied { execute } for pid=4840 comm=".gms.persistent" path="/system/framework/oat/x86_64/com.android.location.provider.odex" dev="sda1" ino=41793 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 2828.801432] type=1400 audit(1509895528.474:945): avc: denied { read } for pid=4840 comm=".gms.persistent" path=2F6465762F6173686D656D2F64616C76696B2D6E6F6E206D6F76696E67207370616365202864656C6574656429 dev="tmpfs" ino=8038 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 2828.944066] type=1400 audit(1509895528.616:946): avc: denied { sendto } for pid=4870 comm=".android.chrom" path="/dev/socket/logdw" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 2828.949216] type=1400 audit(1509895528.622:947): avc: denied { call } for pid=4870 comm="re-initialized>" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 2829.383823] audit: audit_lost=161 audit_rate_limit=20 audit_backlog_limit=64
+[ 2829.383829] audit: rate limit exceeded
+[ 2835.270206] type=1400 audit(1509895534.942:969): avc: denied { sendto } for pid=4181 comm="ndroid.settings" path="/dev/socket/logdw" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 2836.919679] type=1400 audit(1509895536.592:970): avc: denied { read } for pid=4181 comm="ndroid.settings" path=2F6465762F6173686D656D2F64616C76696B2D6E6F6E206D6F76696E67207370616365202864656C6574656429 dev="tmpfs" ino=8038 scontext=u:r:system_app:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 2875.539908] type=1400 audit(1509895575.212:971): avc: denied { transfer } for pid=4181 comm="RenderThread" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 2876.170313] type=1400 audit(1509895575.843:972): avc: denied { read } for pid=1507 comm="m.android.phone" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E207370616365202864656C6574656429 dev="tmpfs" ino=8517 scontext=u:r:radio:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 2880.545110] type=1400 audit(1509895580.214:973): avc: denied { read } for pid=4594 comm="HeapTaskDaemon" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E207370616365202864656C6574656429 dev="tmpfs" ino=8517 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 2907.391957] type=1400 audit(1509895607.064:974): avc: denied { check_context } for pid=5114 comm="main" scontext=u:r:init:s0 tcontext=u:object_r:kernel:s0 tclass=security permissive=1
+[ 2918.691222] type=1400 audit(1509895618.364:975): avc: denied { execmem } for pid=1064 comm="surfaceflinger" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[ 2955.634080] type=1400 audit(1509895655.306:976): avc: denied { sendto } for pid=1438 comm="ndroid.systemui" path="/dev/socket/logdw" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 2955.680048] type=1400 audit(1509895655.352:977): avc: denied { transfer } for pid=1438 comm="RenderThread" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 2961.098136] type=1400 audit(1509895660.771:978): avc: denied { read } for pid=1343 comm="android.display" path=2F6465762F6173686D656D2F64616C76696B2D6E6F6E206D6F76696E67207370616365202864656C6574656429 dev="tmpfs" ino=8038 scontext=u:r:system_server:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 2971.489353] type=1400 audit(1509895671.162:979): avc: denied { getattr } for pid=4181 comm="ndroid.settings" path="/data/media" dev="sda1" ino=131137 scontext=u:r:system_app:s0 tcontext=u:object_r:media_rw_data_file:s0 tclass=dir permissive=1
+[ 2971.545828] type=1400 audit(1509895671.218:980): avc: denied { getattr } for pid=1343 comm="PackageManager" path="/data/media" dev="sda1" ino=131137 scontext=u:r:system_server:s0 tcontext=u:object_r:media_rw_data_file:s0 tclass=dir permissive=1
+[ 2971.596073] type=1400 audit(1509895671.268:981): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.google.android.googlequicksearchbox/lib" dev="sda1" ino=131270 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0 tclass=lnk_file permissive=1
+[ 2986.163744] type=1400 audit(1509895685.834:982): avc: denied { sys_ptrace } for pid=1051 comm="vold" capability=19 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[ 2986.164272] type=1400 audit(1509895685.837:983): avc: denied { sys_chroot } for pid=5233 comm="vold" capability=18 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[ 3017.348401] type=1400 audit(1509895717.021:984): avc: denied { use } for pid=3925 comm="SoundPoolThread" path="/dev/ashmem" dev="tmpfs" ino=4480 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=fd permissive=1
+[ 3130.168072] type=1400 audit(1509895829.840:985): avc: denied { execute_no_trans } for pid=5312 comm="am" path="/system/bin/am" dev="sda1" ino=40977 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 3130.422762] type=1400 audit(1509895830.095:986): avc: denied { mounton } for pid=5312 comm="main" path="/proc/cpuinfo" dev="proc" ino=4026531986 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:proc_cpuinfo:s0 tclass=file permissive=1
+[ 3158.377442] type=1400 audit(1509895858.050:987): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=32237 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=file permissive=1
+[ 3158.450991] type=1400 audit(1509895858.123:988): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=21218 scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=file permissive=1
+[ 3434.253216] type=1400 audit(1509896133.926:989): avc: denied { write } for pid=5339 comm="su" name="server" dev="tmpfs" ino=6561 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=sock_file permissive=1
+[ 3434.576141] type=1400 audit(1509896134.248:990): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:su:s0 tclass=process permissive=1
+[ 3434.576176] type=1400 audit(1509896134.248:991): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:su:s0 tclass=binder permissive=1
+[ 3434.576198] type=1400 audit(1509896134.249:992): avc: denied { read } for pid=1006 comm="logd.auditd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_audit_socket permissive=1
+[ 3434.578945] type=1400 audit(1509896134.251:993): avc: denied { call } for pid=1064 comm="EventThread" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[ 3434.579475] type=1400 audit(1509896134.252:994): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=33247 scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=file permissive=1
+[ 3434.585875] type=1400 audit(1509896134.258:995): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=9636 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=file permissive=1
+[ 3434.593554] type=1400 audit(1509896134.266:996): avc: denied { write } for pid=4141 comm="Thread-3" name=".socket5344" dev="tmpfs" ino=52080 scontext=u:r:system_app:s0 tcontext=u:object_r:device:s0 tclass=sock_file permissive=1
+[ 3434.596165] type=1400 audit(1509896134.269:997): avc: denied { read } for pid=4141 comm="tings:superuser" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 3434.597943] type=1400 audit(1509896134.270:998): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=process permissive=1
+[ 3459.014682] init: Untracked pid 5342 exited with status 130
+[ 3460.327613] type=1400 audit(1509896160.000:1003): avc: denied { wake_alarm } for pid=1343 comm="AlarmManager" capability=35 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=capability2 permissive=1
+[ 3618.492094] type=1400 audit(1509896318.164:1004): avc: denied { execute } for pid=5381 comm="bash" name="linker64" dev="sda1" ino=41113 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 3618.492402] type=1400 audit(1509896318.164:1005): avc: denied { read open } for pid=5381 comm="bash" path="/system/bin/linker64" dev="sda1" ino=41113 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 3618.493423] type=1400 audit(1509896318.166:1006): avc: denied { getattr } for pid=5381 comm="command-not-fou" path="/system/lib64/libc.so" dev="sda1" ino=74304 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 3641.010817] type=1400 audit(1509896340.683:1007): avc: denied { connectto } for pid=5389 comm="http" path="/dev/socket/dnsproxyd" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 3641.011471] type=1400 audit(1509896340.684:1008): avc: denied { node_bind } for pid=1083 comm="netd" src=60097 scontext=u:r:init:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[ 3641.268182] type=1400 audit(1509896340.941:1009): avc: denied { read write } for pid=1083 comm="netd" path="socket:[53881]" dev="sockfs" ino=53881 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 3641.268251] type=1400 audit(1509896340.941:1010): avc: denied { getopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 3641.268284] type=1400 audit(1509896340.941:1011): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=tcp_socket permissive=1
+[ 3652.339653] init: Untracked pid 5461 killed by signal 9
+[ 4065.374596] type=1400 audit(1509896765.047:1012): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=process permissive=1
+[ 4065.375003] type=1400 audit(1509896765.047:1013): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[ 4398.608785] type=1400 audit(1509897098.281:1014): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[ 4398.608874] type=1400 audit(1509897098.281:1015): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=binder permissive=1
+[ 4398.609637] type=1400 audit(1509897098.282:1016): avc: denied { getattr } for pid=4942 comm="gle.android.gms" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 4398.620107] type=1400 audit(1509897098.293:1017): avc: denied { read } for pid=4942 comm="EventLogService" name="event-log-tags" dev="sda1" ino=41330 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 4398.620468] type=1400 audit(1509897098.293:1018): avc: denied { open } for pid=4942 comm="EventLogService" path="/system/etc/event-log-tags" dev="sda1" ino=41330 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 4398.628983] type=1400 audit(1509897098.299:1019): avc: denied { connectto } for pid=4942 comm="EventLogService" path="/dev/socket/logdr" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 4407.411620] type=1400 audit(1509897107.084:1020): avc: denied { getattr } for pid=1438 comm="ndroid.systemui" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 4407.413234] type=1400 audit(1509897107.086:1021): avc: denied { read } for pid=1438 comm="ndroid.systemui" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 4407.414054] type=1400 audit(1509897107.086:1022): avc: denied { call } for pid=1079 comm="Binder:1079_2" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=binder permissive=1
+[ 4407.414834] type=1400 audit(1509897107.087:1023): avc: denied { transfer } for pid=1081 comm="mediaextractor" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=binder permissive=1
+[ 4407.560757] type=1400 audit(1509897107.233:1024): avc: denied { getattr } for pid=5526 comm="login" path="/system" dev="sda1" ino=32775 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[ 4511.316743] type=1400 audit(1509897210.989:1025): avc: denied { setpcap } for pid=5551 comm="main" capability=8 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[ 4511.317282] type=1400 audit(1509897210.990:1026): avc: denied { getpgid } for pid=1071 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[ 4511.317479] type=1400 audit(1509897210.990:1027): avc: denied { setcurrent } for pid=5551 comm="main" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[ 4511.317542] type=1400 audit(1509897210.990:1028): avc: denied { dyntransition } for pid=5551 comm="main" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[ 4511.327399] type=1400 audit(1509897211.000:1029): avc: denied { getattr } for pid=5551 comm="id.gms.unstable" path="/system" dev="sda1" ino=32775 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[ 4511.327659] type=1400 audit(1509897211.000:1030): avc: denied { execute } for pid=5551 comm="id.gms.unstable" path="/system/framework/oat/x86_64/com.android.location.provider.odex" dev="sda1" ino=41793 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 4511.409102] type=1400 audit(1509897211.082:1031): avc: denied { execute } for pid=1080 comm="Binder:1080_3" path="/system/vendor/lib/mediadrm/libdrmclearkeyplugin.so" dev="sda1" ino=106706 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 4511.420914] type=1400 audit(1509897211.093:1032): avc: denied { setopt } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 4511.420977] type=1400 audit(1509897211.093:1033): avc: denied { setattr } for pid=1083 comm="netd" name="UDPv6" dev="sockfs" ino=54816 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 4511.421029] type=1400 audit(1509897211.093:1034): avc: denied { connect } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+[ 4710.170344] type=1400 audit(1509897409.843:1049): avc: denied { read } for pid=1083 comm="netd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_route_socket permissive=1
+[ 6192.261799] type=1400 audit(1509898891.934:1050): avc: denied { name_bind } for pid=1083 comm="netd" src=25623 scontext=u:r:init:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[ 8507.570855] type=1400 audit(1509901207.243:1051): avc: denied { getattr } for pid=5663 comm="ps" path="/proc/1" dev="proc" ino=5182 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=dir permissive=1
+[ 8507.570968] type=1400 audit(1509901207.243:1052): avc: denied { search } for pid=5663 comm="ps" name="1" dev="proc" ino=5182 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=dir permissive=1
+[ 8507.571050] type=1400 audit(1509901207.243:1053): avc: denied { read } for pid=5663 comm="ps" name="stat" dev="proc" ino=8955 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[ 8507.571090] type=1400 audit(1509901207.244:1054): avc: denied { open } for pid=5663 comm="ps" path="/proc/1/stat" dev="proc" ino=8955 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[ 8507.571199] type=1400 audit(1509901207.244:1055): avc: denied { getattr } for pid=5663 comm="ps" path="/proc/2" dev="proc" ino=8863 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:kernel:s0 tclass=dir permissive=1
+[ 8507.571234] type=1400 audit(1509901207.244:1056): avc: denied { search } for pid=5663 comm="ps" name="2" dev="proc" ino=8863 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:kernel:s0 tclass=dir permissive=1
+[ 8507.571270] type=1400 audit(1509901207.244:1057): avc: denied { read } for pid=5663 comm="ps" name="stat" dev="proc" ino=8956 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:kernel:s0 tclass=file permissive=1
+[ 8507.571320] type=1400 audit(1509901207.244:1058): avc: denied { open } for pid=5663 comm="ps" path="/proc/2/stat" dev="proc" ino=8956 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:kernel:s0 tclass=file permissive=1
+[ 8507.572958] type=1400 audit(1509901207.245:1059): avc: denied { getattr } for pid=5663 comm="ps" path="/proc/1001" dev="proc" ino=4383 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:ueventd:s0 tclass=dir permissive=1
+[ 8507.572994] type=1400 audit(1509901207.245:1060): avc: denied { search } for pid=5663 comm="ps" name="1001" dev="proc" ino=4383 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:ueventd:s0 tclass=dir permissive=1
+[ 8507.574671] audit: audit_lost=166 audit_rate_limit=20 audit_backlog_limit=64
+[ 8507.574672] audit: rate limit exceeded
+[ 8526.292201] type=1400 audit(1509901225.965:1101): avc: denied { read } for pid=4181 comm=4173796E635461736B20233134 path="/system/priv-app/Settings/Settings.apk" dev="sda1" ino=98311 scontext=u:r:system_app:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 8526.296638] type=1400 audit(1509901225.969:1102): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=binder permissive=1
+[ 8526.300604] type=1400 audit(1509901225.973:1103): avc: denied { read } for pid=1077 comm="installd" name="com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 8526.300684] type=1400 audit(1509901225.973:1104): avc: denied { open } for pid=1077 comm="installd" path="/data/data/com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 8526.300716] type=1400 audit(1509901225.973:1105): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.android.cts.priv.ctsshim" dev="sda1" ino=131221 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 8526.311486] type=1400 audit(1509901225.984:1106): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=binder permissive=1
+[ 8526.316604] type=1400 audit(1509901225.989:1107): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.google.android.youtube/cache/1489418796403.tmp" dev="sda1" ino=131847 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=1
+[ 8526.335118] type=1400 audit(1509901226.007:1108): avc: denied { call } for pid=1064 comm="Binder:1064_4" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=binder permissive=1
+[ 8526.342733] type=1400 audit(1509901226.013:1109): avc: denied { getattr } for pid=1077 comm="installd" path="/data/data/com.termux/files/home/storage/shared" dev="sda1" ino=172913 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=lnk_file permissive=1
+[ 8526.900552] type=1400 audit(1509901226.573:1110): avc: denied { getattr } for pid=4181 comm="ndroid.settings" path="/system/framework/framework-res.apk" dev="sda1" ino=41749 scontext=u:r:system_app:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 8564.798048] type=1400 audit(1509901264.470:1111): avc: denied { getattr } for pid=1072 comm="main" path="/sys/kernel/debug/tracing/trace_marker" dev="tracefs" ino=41 scontext=u:r:init:s0 tcontext=u:object_r:debugfs_trace_marker:s0 tclass=file permissive=1
+[ 8565.050504] type=1400 audit(1509901264.723:1112): avc: denied { write } for pid=1064 comm="Binder:1064_4" path="socket:[56560]" dev="sockfs" ino=56560 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[ 8565.277507] type=1400 audit(1509901264.950:1113): avc: denied { dyntransition } for pid=5708 comm="main" scontext=u:r:init:s0 tcontext=u:r:isolated_app:s0:c512,c768 tclass=process permissive=1
+[ 8565.279126] type=1400 audit(1509901264.951:1114): avc: denied { setpgid } for pid=1072 comm="main" scontext=u:r:init:s0 tcontext=u:r:isolated_app:s0:c512,c768 tclass=process permissive=1
+[ 8565.279661] type=1400 audit(1509901264.952:1115): avc: denied { sendto } for pid=5708 comm="dboxed_process" path="/dev/socket/logdw" scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 8565.282200] type=1400 audit(1509901264.955:1116): avc: denied { sendto } for pid=1343 comm="Binder:1343_18" path="/dev/socket/logdw" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 8565.301489] type=1400 audit(1509901264.974:1117): avc: denied { call } for pid=5708 comm="re-initialized>" scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 8565.303354] type=1400 audit(1509901264.976:1118): avc: denied { call } for pid=1343 comm="android.display" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 8565.303413] type=1400 audit(1509901264.976:1119): avc: denied { transfer } for pid=1343 comm="android.display" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[ 8565.303474] type=1400 audit(1509901264.976:1120): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:isolated_app:s0:c512,c768 tclass=process permissive=1
+[ 8576.882956] type=1400 audit(1509901276.555:1145): avc: denied { getattr } for pid=5913 comm="dboxed_process1" path="/data/data/com.android.chrome" dev="sda1" ino=131551 scontext=u:r:isolated_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=1
+[ 8583.147458] type=1400 audit(1509901282.820:1146): avc: denied { open } for pid=1438 comm="ndroid.systemui" path="/system/app/Chrome/Chrome.apk" dev="sda1" ino=32833 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 8613.110561] type=1400 audit(1509901312.783:1147): avc: denied { use } for pid=1083 comm="netd" path="socket:[57091]" dev="sockfs" ino=57091 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=fd permissive=1
+[ 8851.177311] type=1400 audit(1509901550.849:1148): avc: denied { read } for pid=1086 comm="perfprofd" name="perfprofd.conf" dev="sda1" ino=147928 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=1
+[ 8851.177735] type=1400 audit(1509901550.849:1149): avc: denied { open } for pid=1086 comm="perfprofd" path="/data/data/com.google.android.gms/files/perfprofd.conf" dev="sda1" ino=147928 scontext=u:r:init:s0 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=1
+[ 9000.029443] type=1400 audit(1509901699.701:1150): avc: denied { sendto } for pid=1507 comm="m.android.phone" path="/dev/socket/logdw" scontext=u:r:radio:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[ 9520.330764] type=1400 audit(1509902220.002:1151): avc: denied { read } for pid=1438 comm="ndroid.systemui" path=2F6465762F6173686D656D2F64616C76696B2D6E6F6E206D6F76696E67207370616365202864656C6574656429 dev="tmpfs" ino=8038 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[ 9551.713578] type=1400 audit(1509902251.385:1152): avc: denied { execute } for pid=1080 comm="Binder:1080_3" path="/system/vendor/lib/mediadrm/libdrmclearkeyplugin.so" dev="sda1" ino=106706 scontext=u:r:init:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[ 9551.793425] type=1400 audit(1509902251.465:1153): avc: denied { use } for pid=1083 comm="netd" path="socket:[57280]" dev="sockfs" ino=57280 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=fd permissive=1
+[ 9553.495988] type=1400 audit(1509902253.167:1154): avc: denied { search } for pid=5551 comm="Binder:5551_5" name="1071" dev="proc" ino=6390 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=dir permissive=1
+[ 9553.496073] type=1400 audit(1509902253.167:1155): avc: denied { read } for pid=5551 comm="Binder:5551_5" name="stat" dev="proc" ino=8538 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[ 9553.496105] type=1400 audit(1509902253.167:1156): avc: denied { open } for pid=5551 comm="Binder:5551_5" path="/proc/1071/stat" dev="proc" ino=8538 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1
+[ 9553.512049] type=1400 audit(1509902253.183:1157): avc: denied { read } for pid=5551 comm="Binder:5551_5" name="/" dev="tmpfs" ino=5138 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[ 9553.512098] type=1400 audit(1509902253.183:1158): avc: denied { open } for pid=5551 comm="Binder:5551_5" path="/dev" dev="tmpfs" ino=5138 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=dir permissive=1
+[ 9555.068990] type=1400 audit(1509902254.741:1159): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=18011 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=file permissive=1
+[ 9567.388144] type=1400 audit(1509902267.059:1160): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=21218 scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=file permissive=1
+[ 9582.321072] clocksource: timekeeping watchdog on CPU1: Marking clocksource 'tsc' as unstable because the skew is too large:
+[ 9584.181099] clocksource:                       'hpet' wd_now: b73075b5 wd_last: a3642ab8 mask: ffffffff
+[ 9584.181099] clocksource:                       'tsc' cs_now: 143b7d2a281b cs_last: 143b3239a1c6 mask: ffffffffffffffff
+[ 9585.138201] clocksource: Switched to clocksource hpet
+[13757.175661] type=1400 audit(1509906456.847:1161): avc: denied { read } for pid=1343 comm="Binder:1343_16" path=2F6465762F6173686D656D2F64616C76696B2D6D61696E207370616365202864656C6574656429 dev="tmpfs" ino=8517 scontext=u:r:system_server:s0 tcontext=u:object_r:init_tmpfs:s0 tclass=file permissive=1
+[13909.470006] type=1400 audit(1509906609.139:1162): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=33930 scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=file permissive=1
+[15769.179924] type=1400 audit(1509908468.849:1163): avc: denied { sys_ptrace } for pid=1050 comm="debuggerd64" capability=19 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[15769.180383] type=1400 audit(1509908468.852:1164): avc: denied { ptrace } for pid=6423 comm="debuggerd64" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=process permissive=1
+[15769.181628] type=1400 audit(1509908468.853:1165): avc: denied { write } for pid=6423 comm="debuggerd64" name="ndebugsocket" dev="sda1" ino=131214 scontext=u:r:init:s0 tcontext=u:object_r:system_ndebug_socket:s0 tclass=sock_file permissive=1
+[15769.181749] type=1400 audit(1509908468.853:1166): avc: denied { connectto } for pid=6423 comm="debuggerd64" path="/data/system/ndebugsocket" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=1
+[15769.295636] type=1400 audit(1509908468.967:1167): avc: denied { write } for pid=6423 comm="debuggerd64" name="logdr" dev="tmpfs" ino=3986 scontext=u:r:init:s0 tcontext=u:object_r:logdr_socket:s0 tclass=sock_file permissive=1
+[15769.300871] get_sys_time_ex[6422]: segfault at 59ff5ff4 ip 00007f34c2c864ab sp 00007ffee31ae800 error 4 in libc.so[7f34c2bf3000+ea000]
+[15769.409683] type=1400 audit(1509908469.081:1168): avc: denied { write } for pid=1062 comm="lmkd" name="oom_score_adj" dev="proc" ino=50001 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=file permissive=1
+[16284.511550] get_sys_time_ex[6461]: segfault at 11db05c0 ip 000070eb11cd85a1 sp 00007ffc9d3c0bf8 error 4 in libc.so[70eb11cb7000+ea000]
+[16510.788184] get_sys_time_ex[6492]: segfault at ac4e5c0 ip 00007b610ab8347b sp 00007ffe4cfff4a0 error 4 in libc.so[7b610ab55000+ea000]
+[16540.328255] type=1400 audit(1509909239.999:1169): avc: denied { wake_alarm } for pid=1343 comm="AlarmManager" capability=35 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=capability2 permissive=1
+[16540.328418] type=1400 audit(1509909240.000:1170): avc: denied { read } for pid=1006 comm="logd.auditd" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_audit_socket permissive=1
+[16612.657923] type=1400 audit(1509909312.329:1171): avc: denied { sys_ptrace } for pid=1050 comm="debuggerd64" capability=19 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[21100.339624] type=1400 audit(1509913800.011:1172): avc: denied { setpcap } for pid=6692 comm="main" capability=8 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+[21100.340339] type=1400 audit(1509913800.012:1173): avc: denied { setcurrent } for pid=6692 comm="main" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[21100.345283] type=1400 audit(1509913800.016:1174): avc: denied { read } for pid=1438 comm="ndroid.systemui" scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[21100.379662] type=1400 audit(1509913800.051:1175): avc: denied { call } for pid=1064 comm=504F5349582074696D65722031 scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[21100.382438] type=1400 audit(1509913800.054:1176): avc: denied { read } for pid=3925 comm="com.termux" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[21100.578357] type=1400 audit(1509913800.250:1177): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=process permissive=1
+[21110.967964] type=1400 audit(1509913810.639:1178): avc: denied { connectto } for pid=4942 comm="EventLogService" path="/dev/socket/logdr" scontext=u:r:priv_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[21532.095662] type=1400 audit(1509914231.767:1179): avc: denied { transfer } for pid=1064 comm="Binder:1064_2" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[21798.543330] type=1400 audit(1509914498.215:1180): avc: denied { connectto } for pid=6776 comm="git-remote-http" path="/dev/socket/dnsproxyd" scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[21800.157423] type=1400 audit(1509914499.829:1181): avc: denied { link } for pid=6781 comm="git" name="tmp_obj_qZvKU8" dev="sda1" ino=173349 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=file permissive=1
+[21936.866846] type=1400 audit(1509914636.538:1182): avc: denied { read } for pid=1343 comm="android.display" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+[22014.706070] type=1400 audit(1509914714.377:1183): avc: denied { execute_no_trans } for pid=6812 comm="su" path="/system/xbin/su" dev="sda1" ino=114926 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[22014.709374] type=1400 audit(1509914714.381:1184): avc: denied { write } for pid=6813 comm="su" name="server" dev="tmpfs" ino=6561 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:device:s0 tclass=sock_file permissive=1
+[22016.413270] type=1400 audit(1509914716.085:1185): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:su:s0 tclass=process permissive=1
+[22016.413371] type=1400 audit(1509914716.085:1186): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:su:s0 tclass=binder permissive=1
+[22016.521862] type=1400 audit(1509914716.193:1187): avc: denied { getpgid } for pid=1071 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=process permissive=1
+[22016.522711] type=1400 audit(1509914716.194:1188): avc: denied { dyntransition } for pid=6829 comm="main" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=process permissive=1
+[22016.523344] type=1400 audit(1509914716.195:1189): avc: denied { sendto } for pid=6829 comm="tings:superuse" path="/dev/socket/logdw" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+[22016.567120] type=1400 audit(1509914716.238:1190): avc: denied { call } for pid=6829 comm="re-initialized>" scontext=u:r:system_app:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[22016.568055] type=1400 audit(1509914716.239:1191): avc: denied { getattr } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=process permissive=1
+[22016.568105] type=1400 audit(1509914716.239:1192): avc: denied { transfer } for pid=1063 comm="servicemanager" scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=binder permissive=1
+[22022.863318] type=1400 audit(1509914722.535:1203): avc: denied { call } for pid=1064 comm="Binder:1064_2" scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c512,c768 tclass=binder permissive=1
+[22039.738638] init: Untracked pid 6815 exited with status 0
+[22043.386989] type=1400 audit(1509914743.058:1204): avc: denied { execute } for pid=6871 comm="bash" name="linker64" dev="sda1" ino=41113 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[22043.387673] type=1400 audit(1509914743.058:1205): avc: denied { read open } for pid=6871 comm="bash" path="/system/bin/linker64" dev="sda1" ino=41113 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[22043.440117] type=1400 audit(1509914743.109:1206): avc: denied { getattr } for pid=6871 comm="su" path="/system" dev="sda1" ino=32775 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[22043.440211] type=1400 audit(1509914743.109:1207): avc: denied { getattr } for pid=6871 comm="su" path="/system/lib64/libc.so" dev="sda1" ino=74304 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+[22043.510574] type=1400 audit(1509914743.174:1208): avc: denied { execute_no_trans } for pid=6871 comm="su" path="/system/xbin/su" dev="sda1" ino=114926 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
