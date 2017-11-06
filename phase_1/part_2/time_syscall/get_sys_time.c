@@ -11,20 +11,24 @@
  * Mohammadhosein A'lami:	94104401
  */
 
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/time.h>        // to use gettimeofday syscall
-#include <errno.h>
-#include <time.h>            // to use struct tm and  localtime functions
+#include <stdio.h>		// usage: working with standard output
+#include <unistd.h>		// usage: system call function
+#include <sys/syscall.h>	// usage: syscall name table
+#include <errno.h>		// usage: error description
+#include <time.h>		// usage: struct tm and  localtime functions
 
 int main() {
-	struct timeval system_time_value;
+	struct timeval system_time_value;	// syscall input arguments
 	struct timezone system_time_zone;
 
-	int operation_status = gettimeofday(&system_time_value, &system_time_zone);
+	// system call
+	int status = \
+	syscall(SYS_gettimeofday, &system_time_value, &system_time_zone);
 	
-	if (operation_status == 0) {
-		fprintf(stdout, "OPERATION WAS SUCCESSFULL!\n");
+	if (status == 0) {	// success scenario
+//		fprintf(stdout, "OPERATION WAS SUCCESSFULL!\n");
+
+		// parsing system call output using function and DS in time.h library
 		struct tm * detailed_time = localtime(&(system_time_value.tv_sec));
 		int year = detailed_time->tm_year + 1900;
 		int month = detailed_time->tm_mon + 1;
@@ -36,7 +40,9 @@ int main() {
 		int second = detailed_time->tm_sec; 
 		int msecond = system_time_value.tv_usec / 1000; 
 		int usecond = system_time_value.tv_usec - msecond * 1000;
-		
+
+
+		// printing results in standart output (stdout)
 		fprintf(stdout, "Date and Time:\t\t\t");
 		fprintf(stdout, "%02d/%02d/%d  -  %02d:%02d:%02d..%03d.%03d\n", 
 				month, month_day, year, hour, minute, second,
@@ -47,9 +53,8 @@ int main() {
 				system_time_zone.tz_dsttime);
 		fprintf(stdout, "Minutes East of Greenwich:\t%d\n", 
 				-(system_time_zone.tz_minuteswest));
-	} else {
+	} else {	// failure scenario
 		fprintf(stderr, "OPERATION FAILED: %s\n", strerror(errno));
 	}
-
 	return 0;
 }
