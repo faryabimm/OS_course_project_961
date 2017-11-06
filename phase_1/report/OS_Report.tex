@@ -87,6 +87,7 @@ $ mv ~/Downloads/android-x86_64-7.1-rc2.iso ~/Desktop/OS\ Project/
 $ qemu-img create -f qcow2 android71.qcow2 8G
 \end{verbatim}
 \end{latin}
+
 این دستور یک درایو مجازی با پسوند \lr{.qcow2} و با اندازه ۸ گیگابایت می‌سازد. خروجی دستور به شکل زیر است:
 
 \begin{latin}
@@ -309,6 +310,153 @@ $ qemu-system-x86_64 -m 2048 -boot d -enable-kvm \
 \begin{figure}[h]
 	\centering	
 	\includegraphics[width = 0.8\textwidth]{images/install22.png}
+\end{figure}
+
+\section*{اضافه کردن ابزار‌های مورد نیاز}
+
+اولین چیزی که در محیط اندروید به آن نیاز داریم، یک برنامه شبیه‌ساز ترمینال است که به ما امکان مدیریت پکیج‌های موجود روی محیط اندروید است. برای مثال روی محیط فعلی اندروید کامپایلر C وجود ندارد.
+
+به این منظور ابزار Termux را روی محیط نصب می‌‌کنیم.
+
+\begin{figure}[h]
+	\centering	
+	\includegraphics[width = 0.8\textwidth]{images/package1.png}
+\end{figure}
+
+این نرم‌افزار را از
+\href{http://www.termux.com/}{سایت مرجع آن}
+دریافت می‌کنیم. به این صفحه رفته و سپس گزینه دریافت از F-Droid را انتخاب می‌کنیم و در صفحه‌ای که باز می‌شود فایل apk برنامه را گرفته و نصب می‌کنیم. در حین فرایند نصب هر دسترسی که لازم بود به Termux می‌دهیم. در نهایت صفحه Termux مشابه زیر باز می‌شود:
+
+\begin{figure}[h]
+	\centering	
+	\includegraphics[width = 0.8\textwidth]{images/package5.png}
+\end{figure}
+
+در ادامه به منظور نصب پکیج‌های مورد نیاز apt را نصب و به‌روز‌رسانی می‌کنیم. این کار با این دستورهای زیر انجام می‌شود:
+
+\begin{latin}
+\begin{verbatim}
+$ apt install
+$ apt update
+\end{verbatim}
+\end{latin}
+
+سپس پکیج‌هایی که در دستورات زیر آمده است را نصب می‌کنیم، در ادامه دلیل نصب هر کدام از این پکیج‌ها را ذکر می‌کنیم:
+
+\begin{latin}
+\begin{verbatim}
+$ apt install tree
+$ apt install git
+$ apt install vim
+$ apt install clang
+$ apt install proot
+$ apt install termux-tools
+\end{verbatim}
+\end{latin}
+
+پکیج tree که برای پیمایش دایرکتوری‌ها در ترمینال استفاده می‌شود. از git نیز برای متصل شدن به مخزن git مان و فرستادن فایل‌های مد نظر به آن استفاده می‌کنیم. از vim نیز برای ویرایش فایل‌های متنی استفاده می‌کنیم. clang نوعی کامپایلر C است و از proot برای شبیه‌سازی ساختار root لینوکس در محل اجرای یک پردازه(مشخصا پردازه برنامه Termux ) استفاده می‌کنیم. termux-tools نیز برای افزودن برخی قابلیت‌ها به Termux استفاده می‌کنیم. سپس با دستور زیر پکیج‌های نصب‌شده را به‌روز می‌کنیم:
+
+\begin{latin}
+\begin{verbatim}
+$ apt upgrade
+\end{verbatim}
+\end{latin}
+
+سپس با دستور زیر فولدر‌های موجود در آدرس home ساختار یک سیستم عامل لینوکس را ذیل فولدر home برنامه Termux شبیه‌سازی می‌کنیم، برای مثال فولدر‌های Downloads ، Music و فولدر‌های دیگر.
+
+\begin{latin}
+\begin{verbatim}
+$ termux-setup-storage
+\end{verbatim}
+\end{latin}
+
+پس از وارد کردن این دستور برنامه Termux از سیستم عامل اندروید درخواست دسترسی می‌کند که با این درخواست موافقت می‌کنیم.
+
+\begin{figure}[h]
+	\centering	
+	\includegraphics[width = 0.8\textwidth]{images/package6.png}
+\end{figure}
+
+سپس برای تنظیم محیط bash و vim به منظور تسهیل کار دو فایل .bashrc و .vimrc را در آدرس home ساخته و در هر کدام دستوراتی قرار می‌دهیم. در فایل .bashrc این دستورات:
+
+\begin{latin}
+\begin{verbatim}
+clear
+echo "Welcome! :"
+PS1 = 'osprj@android:\w$'
+\end{verbatim}
+\end{latin}
+
+و در فایل .vimrc این دستورات:
+
+\begin{latin}
+\begin{verbatim}
+:syntax on
+:set number
+:set autoindent
+\end{verbatim}
+\end{latin}
+
+\section*{اتصال به مخرن گیت}
+
+به این منظور فولدری با نام VC در آدرس home ساخته و مخزن گیت‌مان را در آن جا clone می‌کنیم:
+
+\begin{latin}
+\begin{verbatim}
+~$ mkdir VC
+~$ cd VC
+~/VC$ git clone https://github.com/faryabimm/OS_course_project_961.git
+\end{verbatim}
+\end{latin}
+
+\section*{گرفتن خروجی دستور‌های logcat و dmesg}
+
+به این منظور در دایرکتوری بالا فولدری با نام \lr{phase\_1} و ذیل آن فولدری با نام \lr{part\_1} برای انجام بخش اول این فاز یعنی گرفتن خروجی دستور‌های ذکر‌شده می‌سازیم. سپس به این دایرکتوی رفته و خروجی دستورات را به وسیله دستور‌های زیر ذخیره می‌کنیم:
+
+\begin{latin}
+\begin{verbatim}
+$ logcat > logcat_all.txt
+$ # because logcat is an open stream we need to manually terminate it
+$ # <ctrl> + <c>
+\end{verbatim}
+\end{latin}
+
+اما برای اجرای فراخوانی dmesg نیاز به دسترسی root داریم و باید از دستور su استفاده کنیم. دقت کنید که پس از این حالت به صورت خودکار به آدرس / سیستم منتقل می‌شویم و باید مجددا به آدرس home برنامه Termux که قبلا در آن بودیم برگردیم. پس از این کار دستور dmesg را مانند دستور قبل اجرا کرده و خروجی آن را در یک فایل متنی می‌ریزیم. همین‌طور باید دقت داشت از جایی که فایل متنی‌مان در حالت root ایجاد شده بایستی اجازه دسترسی به آن را به سایر کاربران نیز بدهیم.
+
+\begin{latin}
+\begin{verbatim}
+$ su
+# cd /data/data/com.termux/files/home/VC/OS_course_project_961/
+  phase_1/part_1/
+# dmesg > dmesg_all.txt
+# chmod 777 dmesg.txt
+# exit
+\end{verbatim}
+\end{latin}
+
+حال با دستورات زیر ۵۰ خط آخر هر فایل را استخراج کرده و در یک فایل متنی جدید ذخیره می‌کنیم:
+
+\begin{latin}
+\begin{verbatim}
+$ tail -50 logcat_all.txt > logcat_50.txt
+$ tail -50 dmesg_all.txt > dmesg_50.txt
+\end{verbatim}
+\end{latin}
+
+\section*{پیاده‌سازی فراخوانی‌های سیستمی مورد نظر}
+
+ابتدا به فولدر \lr{phase\_1} برگشته و فولدری جدید با نام \lr{part\_2} برای ذخیره‌سازی فایل‌ فراخوانی‌ های سیستمی ذکر‌شده ایجاد می‌کنیم و ذیل آن یک فولدر با نام time\_syscall و یک فولدر با نام cpu\_utilization\_syscall ، هر کدام برای دحیره‌سازی یک فراخوانی سیستمی. کد هر یک از این فراخوانی‌های سیستمی در مخزن پروژه موجود است.
+
+خروجی نوعی این فراخوانی‌‌های سیستمی در عکس‌های زیر آمده است:
+
+\begin{figure}[h]
+	\centering	
+	\includegraphics[width = 1\textwidth]{images/syscall1.png}
+\end{figure}
+
+\begin{figure}[h]
+	\centering	
+	\includegraphics[width = 1\textwidth]{images/syscall2.png}
 \end{figure}
 
 \begin{thebibliography}{9}
