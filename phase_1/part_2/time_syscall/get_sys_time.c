@@ -22,10 +22,11 @@ int main() {
 	struct timezone system_time_zone;
 
 	// system call
-	int status = syscall(SYS_gettimeofday, &system_time_value, &system_time_zone);
+	int status = \
+	syscall(SYS_gettimeofday, &system_time_value, &system_time_zone);
 	
 	if (status == 0) {	// success scenario
-		fprintf(stdout, "OPERATION WAS SUCCESSFULL!\n");
+//		fprintf(stdout, "OPERATION WAS SUCCESSFULL!\n");
 
 		// parsing system call output using function and DS in time.h library
 		struct tm * detailed_time = localtime(&(system_time_value.tv_sec));
