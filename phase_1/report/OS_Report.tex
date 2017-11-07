@@ -3,8 +3,10 @@
 \usepackage{listings}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage{graphicx}
 \usepackage{xepersian}
 \usepackage{ulem}
+
 
 \settextfont{XB Zar}
 \setlatintextfont{XB Zar}
@@ -45,7 +47,6 @@
 }
 
 \date{}
-
 \begin{document}
 
 \maketitle
@@ -442,6 +443,87 @@ $ tail -50 logcat_all.txt > logcat_50.txt
 $ tail -50 dmesg_all.txt > dmesg_50.txt
 \end{verbatim}
 \end{latin}
+
+\section*{تحلیل خروجی دستور dmesg}
+خروجی دستور dmesg حاوی اطلاعات تمامی اتفاقات رخ داده در سطح کرنل شامل گزارش‌های رخداد، خطا‌های ایجاد شده و هشدار‌های سیستمی است. هر خط در این فایل شامل بخش‌های مختلفی است. ابتدای هر خط  زمان ثبت آن خط آورده می‌شود.
+
+اکثر خطوط این فایل خروجی‌های سیستم ثبت رخداد audit هستند. در این خطوط نوع سرویسی که یک پردازه درخواست کرده و از آن گرفته شده و سایر اطلاعات مربوط به پردازه و سرویس و کد خطا آورده می‌شود. خط زیر مثالی از این خطوط است:
+
+\begin{latin}
+\begin{verbatim}
+[21100.340339] type=1400 audit(1509913800.012:1173):
+avc: denied { setcurrent } for pid=6692 comm="main"
+scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+\end{verbatim}
+\end{latin}
+
+سایر خطوط این فایل شامل رخداد‌های تغییر فرکانس کلاک پردازه‌ی اصلی،
+
+\begin{latin}
+\begin{verbatim}
+[ 9582.321072] clocksource: timekeeping watchdog on CPU1:
+Marking clocksource 'tsc' as unstable because the skew is too large:
+[ 9584.181099] clocksource:                       'hpet' wd_now:
+b73075b5 wd_last: a3642ab8 mask: ffffffff
+[ 9584.181099] clocksource:                       'tsc' cs_now:
+143b7d2a281b cs_last: 143b3239a1c6 mask: ffffffffffffffff
+[ 9585.138201] clocksource: Switched to clocksource hpet
+\end{verbatim}
+\end{latin}
+اتمام پردازه‌های orphan و تحت قیومیت پردازه‌ی init
+،
+\begin{latin}
+\begin{verbatim}
+[22039.738638] init: Untracked pid 6815 exited with status 0
+\end{verbatim}
+\end{latin}
+
+سیگنال‌های تولید شده و ارسال شده توسط کرنل،
+\begin{latin}
+\begin{verbatim}
+[16510.788184] get_sys_time_ex[6492]: segfault at ac4e5c0 ip
+00007b610ab8347b sp 00007ffe4cfff4a0 error 4 in libc.so[7b610ab55000+ea000]
+\end{verbatim}
+\end{latin}
+خروجی‌های binder ،
+\begin{latin}
+\begin{verbatim}
+[ 2823.744743] binder: undelivered transaction 377418, process died.
+[ 2823.746074] binder: 1343:1343 transaction failed 29189/-22, size 100-0
+line 2939
+\end{verbatim}
+\end{latin}
+ثبت یک سخت افزار در سیستم،
+\begin{latin}
+\begin{verbatim}
+[    5.521942] Registering sdcardfs 0.1
+[    5.585714] input: ImExPS/2 Generic Explorer Mouse as
+/devices/platform/i8042/serio1/input/input4
+[   36.201087] input: Android Power Button as /devices/virtual/input/input5
+\end{verbatim}
+\end{latin}
+و انواع دیگری از رخداد‌هاست.
+
+فایل logcat یک امکان برای log گیری از پردازه‌های در حال اجرا در سیستم در \lr{user space} است. توسعه‌ دهندگان نرم افزار نیز می‌توانند با استفاده از مکانیزم‌های ارایه شده در کلاس‌های logging در زبان جاوا در این فایل به درج رکورد‌های مربوط به برنامه‌ی خود بپردازند و از آن برای دیباگ کردن برنامه استفاده کنند (مخصوصا در برنامه‌های چند ریسه‌ای امروزی که عملیات دیباگ بسیار پیچیده تر و سخت تر از برنامه‌های تک ریسه‌ایست).
+
+در رکورد‌های این فایل زمان ثبت رخداد، pid ثبت کننده‌ی رکورد، pid پردازه‌ی هدف، نوع رکورد (
+\lr{I: Information}
+،
+\lr{W: Warning}
+
+\lr{E: Error}
+)
+، نام صادر کننده‌ی رکورد (به عنوان مثال AndroidRuntime یا SoundPool یا (APM\_AudioPolicyManager و اطلاعات پیام ذکر می‌شود.
+
+در اینجا یک رکورد را به عنوان مثال آورده‌ایم:
+\begin{latin}
+\begin{verbatim}
+11-06 00:15:53.401  1343  1415 E TaskPersister:
+File error accessing recents directory (directory doesn't exist?).
+\end{verbatim}
+\end{latin}
+
+
 
 \section*{پیاده‌سازی فراخوانی‌های سیستمی مورد نظر}
 
