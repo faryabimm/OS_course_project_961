@@ -1,0 +1,3 @@
+/home/mohammadmahdi/os_prj_vc/OS_course_project_961/phase_2/part_1/hello_os_module/hello_os_lkm.ko
+/home/mohammadmahdi/os_prj_vc/OS_course_project_961/phase_2/part_1/hello_os_module/hello_os_lkm.o
+
