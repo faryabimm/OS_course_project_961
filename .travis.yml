@@ -1,0 +1,7 @@
+language: c
+sudo: true
+script:
+  - cat phase_2/part_1/hello_os_module/hello_os_lkm.c
+
+after_success:
+  - echo success
