@@ -6,10 +6,10 @@ script:
   - cd phase_2/part_1/hello_os_module/
   - sudo make
   - sudo lsmod
-  - sudo insmod hello_os_module.ko
+  - sudo insmod hello_os_lkm.ko
   - sudo lsmod
-  - sudo modinfo hello_os_module
-  - sudo rmmod hello_os_module
+  - sudo modinfo hello_os_lkm
+  - sudo rmmod hello_os_lkm
   - sudo lsmod
 
 after_success:
