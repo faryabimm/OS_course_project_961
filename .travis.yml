@@ -1,9 +1,10 @@
 language: c
 sudo: true
 script:
+  - sudo su
   - cd phase_2/part_1/hello_os_module/
   - make
-  - cat phase_2/part_1/hello_os_module/Makefile
+  - cat Makefile
 
 after_success:
   - echo success
