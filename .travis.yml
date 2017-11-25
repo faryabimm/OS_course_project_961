@@ -8,6 +8,8 @@ script:
   - sudo lsmod
   - sudo insmod hello_os_lkm.ko
   - sudo lsmod
+  - MODULE_OUTPUT=$(sudo dmesg | tail -1 | cut -d']' -f 2)
+  - if [[ $MODULE_OUTPUT == *"Hello OS"* ]]; then echo "Output test passed!"; else echo "Module output error!"; exit 1; fi
   - sudo modinfo hello_os_lkm.ko
   - sudo rmmod hello_os_lkm
   - sudo lsmod
