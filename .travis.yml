@@ -1,7 +1,9 @@
 language: c
 sudo: true
 script:
-  - cat phase_2/part_1/hello_os_module/hello_os_lkm.c
+  - cd phase_2/part_1/hello_os_module/
+  - make
+  - cat phase_2/part_1/hello_os_module/Makefile
 
 after_success:
   - echo success
