@@ -1,7 +1,8 @@
 language: c
 sudo: true
-script:
+before_script:
   - sudo su
+script:
   - cd phase_2/part_1/hello_os_module/
   - make
   - cat Makefile
