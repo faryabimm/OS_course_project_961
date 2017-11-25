@@ -5,7 +5,12 @@ script:
   - sudo apt-get install linux-headers-$(uname -r)
   - cd phase_2/part_1/hello_os_module/
   - sudo make
-  - cat Makefile
+  - sudo lsmod
+  - sudo insmod hello_os_module.ko
+  - sudo lsmod
+  - sudo modinfo hello_os_module
+  - sudo rmmod hello_os_module
+  - sudo lsmod
 
 after_success:
   - echo success
