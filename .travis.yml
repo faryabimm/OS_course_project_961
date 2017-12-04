@@ -6,7 +6,7 @@ script:
   - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
   - sudo apt update
   - sudo apt-get install linux-headers-$(uname -r)
-  - sudo apt-get install build-essential
+  - sudo apt-get install build-essential fakeroot
   - sudo apt-get install gcc-5 g++-5
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 1
