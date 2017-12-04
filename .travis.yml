@@ -3,7 +3,7 @@ sudo: true
 script:
   - export REPO_ROOT="/home/travis/build/faryabimm/OS_course_project_961"
   - echo "START -----> testing phase 2 part 1 - compiling and testing kernel module"
-  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
   - sudo apt update
   - sudo apt-get install linux-headers-$(uname -r)
   - sudo apt-get install build-essential
