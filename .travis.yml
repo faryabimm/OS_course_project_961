@@ -28,7 +28,7 @@ script:
   - cd linux-4.9.24/
   - patch -p1 < ../grsecurity-3.1-4.9.24-201704252333.patch
   - cp ../config_grsec_selinux-4.9.24 .config
-  - make -j $(nproc) deb-pkg
+  - fakeroot make -j $(nproc) deb-pkg
   - cd ..
   - ls -la
   - echo "DONE -----> testing phase 2 part 2 - building kernel module with"
