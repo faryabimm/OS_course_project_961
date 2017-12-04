@@ -1,0 +1,48 @@
+including vendor/cm/vendorsetup.sh
+Fetching project LineageOS/android_device_lge_bullhead
+Fetching project repo
+Fetching project LineageOS/android_kernel_lge_bullhead
+Device bullhead not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS).
+Found repository: android_device_lge_bullhead
+Default revision: cm-14.1
+Checking branch info
+Checking if device/lge/bullhead is fetched from android_device_lge_bullhead
+Adding dependency: LineageOS/android_device_lge_bullhead -> device/lge/bullhead
+Using default branch for android_device_lge_bullhead
+Syncing repository to retrieve project.
+Repository synced!
+Looking for dependencies in device/lge/bullhead
+Adding dependencies to manifest
+Checking if kernel/lge/bullhead is fetched from android_kernel_lge_bullhead
+Adding dependency: LineageOS/android_kernel_lge_bullhead -> kernel/lge/bullhead
+Using default branch for android_kernel_lge_bullhead
+Syncing dependencies
+Looking for dependencies in kernel/lge/bullhead
+Dependencies file not found, bailing out.
+Done
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=7.1.2
+LINEAGE_VERSION=14.1-20171201_163453-UNOFFICIAL-bullhead
+TARGET_PRODUCT=lineage_bullhead
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_BUILD_APPS=
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=cortex-a53.a57
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.9.0-deepin12-amd64-x86_64-with-Deepin-15.4.1-unstable
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=NJH47F
+OUT_DIR=/home/mohammadmahdi/android/lineage/out
+============================================

@@ -1,0 +1,51 @@
+$ sudo apt install bison build-essential curl flex git gnupg gperf libesd0-dev liblz4-tool libncurses5-dev \
+  libsdl1.2-dev libwxgtk3.0-dev libxml2 libxml2-utils lzop maven pngcrush schedtool squashfs-tools xsltproc zip lib32readline-gplv2-dev zlib1g-dev g++-multilib gcc-multilib lib32ncurses5-dev  lib32z1-dev
+$ sudo apt install rsync
+
+$ mkdir -p ~/bin
+$ mv ~/Downloads/android.tar ~/
+$ cd ~/
+$ tar -xvf android.tar | tee source_unpack.txt
+
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
+
+
+$ gedit ~/.profile
++ if [ -d "$HOME/bin" ] ; then
++    PATH="$HOME/bin:$PATH"
++ fi
+
+$ cd ~/android/lineage/
+$ source ~/.profile
+$ source build/envsetup.sh
+> including device/generic/mini-emulator-arm64/vendorsetup.sh
+	including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+	including device/generic/mini-emulator-x86_64/vendorsetup.sh
+	including device/generic/mini-emulator-x86/vendorsetup.sh
+	including vendor/cm/vendorsetup.sh
+	including sdk/bash_completion/adb.bash
+	including vendor/cm/bash_completion/git.bash
+	including vendor/cm/bash_completion/repo.bash
+
+$ export USE_NINJA=false
+$ breakfast bullhead | tee breakfast_log.txt (@7:38 PM)(to 8:10 PM)
+$ export USE_CCACHE=1
+$ prebuilts/misc/linux-x86/ccache/ccache -M 50G
+$ export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
+$ croot
+$ brunch bullhead | tee brunch_log.txt (@9:01 PM)(DUR 05:35)
+$ cd ~/android/lineage/out/target/product/bullhead
+$ ls
+> 
+	android-info.txt       installed-files.txt                                          ramdisk-recovery.img
+	boot.img               kernel                                                       recovery
+	build_fingerprint.txt  lineage-14.1-20171203_183811-UNOFFICIAL-bullhead.zip         recovery.id
+	cache                  lineage-14.1-20171203_183811-UNOFFICIAL-bullhead.zip.md5sum  recovery.img
+	cache.img              lineage_bullhead-ota-73e82086d6.zip                          root
+	clean_steps.mk         obj                                                          symbols
+	data                   obj_arm                                                      system
+	fake_packages          ota_script_path                                              system.img
+	gen                    previous_build_config.mk                                     userdata.img
+	install                ramdisk.img
+	installed-files.json   ramdisk-recovery.cpio
