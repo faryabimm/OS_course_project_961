@@ -1,0 +1,32 @@
+$ cd ~/op_prj_p2
+$ ls
+> config-4.10.0-40-generic                  grsecurity-3.1-4.9.24-201704252333.patch.sig
+  grsecurity-3.1-4.9.24-201704252333.patch  linux-4.10.tar.xz
+  linux-4.9.24.tar.xz
+$ tar -xf linux-4.9.24.tar.xz
+$ ls
+> config-4.10.0-40-generic                  grsecurity-3.1-4.9.24-201704252333.patch.sig
+  grsecurity-3.1-4.9.24-201704252333.patch  linux-4.10.tar.xz
+  linux-4.9.24.tar.xz						linux-4.9.24
+$ cd linux-4.9.24/
+$ patch -p1 < ../grsecurity-3.1-4.9.24-201704252333.patch
+$ cd ..
+$ mv config-4.10.0-40-generic linux-4.9.24/.config
+$ cd linux-4.9.24/
+$ make menuconfig
+$ sudo su
+# fakeroot make deb-pkg | tee make.txt (@7:54 AM)(done @ 10:30 AM)
+# exit
+$ cd ..
+$ cd compiled/
+$ ls
+> 
+  linux-4.9.24-grsec_4.9.24-grsec-1_amd64.changes
+  linux-4.9.24-grsec_4.9.24-grsec-1.debian.tar.gz
+  linux-4.9.24-grsec_4.9.24-grsec-1.dsc
+  linux-4.9.24-grsec_4.9.24-grsec.orig.tar.gz
+  linux-firmware-image-4.9.24-grsec_4.9.24-grsec-1_amd64.deb
+  linux-headers-4.9.24-grsec_4.9.24-grsec-1_amd64.deb
+  linux-image-4.9.24-grsec_4.9.24-grsec-1_amd64.deb
+  linux-image-4.9.24-grsec-dbg_4.9.24-grsec-1_amd64.deb
+  linux-libc-dev_4.9.24-grsec-1_amd64.deb
