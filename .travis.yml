@@ -17,7 +17,7 @@ script:
   - echo "DONE -----> testing phase 2 part 1 - compiling and testing kernel module"
   - echo "START -----> testing phase 2 part 2 - building kernel module with"
   - echo "             SELinux disabled and grsecurity enabled and active"
-  - cd phase_2/part_2/CI_build/
+  - cd ~/phase_2/part_2/CI_build/
   - tar -xf linux-4.9.24.tar.xz
   - cd linux-4.9.24/
   - patch -p1 < ../grsecurity-3.1-4.9.24-201704252333.patch
