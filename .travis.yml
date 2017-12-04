@@ -4,7 +4,12 @@ script:
   - export REPO_ROOT="/home/travis/build/faryabimm/OS_course_project_961"
   - echo "START -----> testing phase 2 part 1 - compiling and testing kernel module"
   - sudo apt update
+  - sudo apt-get dist-upgrade
   - sudo apt-get install linux-headers-$(uname -r)
+  - sudo apt-get install fakeroot build-essential crash kexec-tools makedumpfile kernel-wedge
+  - sudo apt-get build-dep linux
+  - sudo apt-get install git-core libncurses5 libncurses5-dev libelf-dev asciidoc binutils-dev
+  - sudo apt-get install libssl-dev
   - cd $REPO_ROOT/phase_2/part_1/hello_os_module/
   - sudo make
   - sudo lsmod
