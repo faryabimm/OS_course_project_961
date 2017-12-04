@@ -4,6 +4,7 @@ script:
   - echo "START -----> testing phase 2 part 1 - compiling and testing kernel module"
   - sudo apt update
   - sudo apt-get install linux-headers-$(uname -r)
+  - cd ~
   - pwd
   - cd phase_2/part_1/hello_os_module/
   - sudo make
