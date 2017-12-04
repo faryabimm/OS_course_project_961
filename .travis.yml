@@ -3,9 +3,13 @@ sudo: true
 script:
   - export REPO_ROOT="/home/travis/build/faryabimm/OS_course_project_961"
   - echo "START -----> testing phase 2 part 1 - compiling and testing kernel module"
+  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test
   - sudo apt update
   - sudo apt-get install linux-headers-$(uname -r)
-  - sudo apt-get install build-essential gcc-5
+  - sudo apt-get install build-essential
+  - sudo apt-get install gcc-5 g++-5
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 1
   - cd $REPO_ROOT/phase_2/part_1/hello_os_module/
   - sudo make
   - sudo lsmod
