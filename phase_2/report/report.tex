@@ -116,6 +116,37 @@ sudo lsmod
 \end{latin}
 لازم به توضیح است از دستور lsmod برای نمایش‌ دادن ماژول‌های بار شده، از دستور modinfo برای نمایش اطلاعات مربوط به یک ماژول بار شده و از rmmod برای حذف یک ماژول استفاده می‌کنیم.
 
+شکل‌های ۱ تا ۴ مراحل مختلف این عملیات را نشان می‌دهند.
+
+\begin{figure}[ht]
+	\centering	
+	\includegraphics[width = 0.9\textwidth]{images/part_1/1.png}
+	\caption{لیست ماژول‌های سیستم قبل از اضافه کردن ماژول ساخته شده}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering	
+	\includegraphics[width = 0.9\textwidth]{images/part_1/2.png}
+	\caption{لیست ماژول‌های سیستم بعد از اضافه کردن ماژول ساخته شده}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering	
+	\includegraphics[width = 0.9\textwidth]{images/part_1/3.png}
+	\caption{۵ خط پایانی خروجی دستور dmesg بعد از اضافه کردن ماژول ساخته شده}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\centering	
+	\includegraphics[width = 0.9\textwidth]{images/part_1/4.png}
+	\caption{توضیحات ماژول ساخته‌شده}
+\end{figure}
+
+
+
 \section*{گام دوم: پیکره‌بندی و وصله کردن ماژول‌ها}
 
 در این گام ابتدا فایل‌های زیر در کنار هم در یک دایرکتوری قرار می‌دهیم:
@@ -377,6 +408,155 @@ Return to function (memcpy, PIE)
 اسکریپت اتوماسیون شده این عملیات به وسیله تراویس نیز در فایل .travis.yml در مخزن گیت‌هاب موجود است.
 
 
+\section*{گام سوم: ساخت rom اندروید برای گوشی موبایل\lr{Nexus 5x}}
+ ابتدا پکیج‌های مورد نیاز فرایند ساخت را با دستورات زیر نصب می‌کنیم:
+ 
+\begin{latin}
+\begin{verbatim}
+$ sudo apt install bison build-essential curl flex git gnupg gperf \
+  libesd0-dev liblz4-tool libncurses5-dev libsdl1.2-dev ibwxgtk3.0-dev \
+  libxml2 libxml2-utils lzop maven pngcrush schedtool squashfs-tools \
+  xsltproc zip lib32readline-gplv2-dev zlib1g-dev g++-multilib gcc-multilib \
+  lib32ncurses5-dev  lib32z1-dev
+
+$ sudo apt install rsync
+\end{verbatim}	
+\end{latin}
+سپس فایلی را که از ftp سرور دانشگاه دانلود کردیم را با این دستورات به پوشه‌ی خانگی منتقل کرده و از حالت فشرده خارج می‌کنیم:
+\begin{latin}
+\begin{verbatim}
+$ mv ~/Downloads/android.tar ~/
+$ cd ~/
+$ tar -xvf android.tar | tee source_unpack.txt
+\end{verbatim}	
+\end{latin}
+حال ابزار repo را از سرور گوگل دانلود کرده و در پوشه‌ی bin ذیل پوشه‌ی خانگی قرار می‌دهیم:
+\begin{latin}
+\begin{verbatim}
+$ mkdir -p ~/bin
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
+\end{verbatim}	
+\end{latin}
+
+سپس فایل profile را ذیل پوشه‌ی خانگی ویرایش کرده و این خطوط را به آن اضافه می‌کنیم:
+
+\begin{latin}
+\begin{verbatim}
+$ gedit ~/.profile
++ if [ -d "$HOME/bin" ] ; then
++    PATH="$HOME/bin:$PATH"
++ fi
+\end{verbatim}	
+\end{latin}
+
+حالا محیط را برای دانلود کرنل و تنظیمات ساخت آماده می‌کنیم. وارد پوشه‌ی ریشه‌ی کد منبع می‌شویم. دستورات زیر را اجرا می‌کنیم:
+
+\begin{latin}
+\begin{verbatim}
+$ cd ~/android/lineage/
+$ source ~/.profile
+$ source build/envsetup.sh
+\end{verbatim}	
+\end{latin}
+خروجی دستور آخر اینگونه است:
+\begin{latin}
+\begin{verbatim}
+> including device/generic/mini-emulator-arm64/vendorsetup.sh
+  including device/generic/mini-emulator-armv7-a-neon/vendorsetup.sh
+  including device/generic/mini-emulator-x86_64/vendorsetup.sh
+  including device/generic/mini-emulator-x86/vendorsetup.sh
+  including vendor/cm/vendorsetup.sh
+  including sdk/bash_completion/adb.bash
+  including vendor/cm/bash_completion/git.bash
+  including vendor/cm/bash_completion/repo.bash
+\end{verbatim}	
+\end{latin}
+
+حالا دستور زیر را اجرا می‌کنیم تا کرنل و تنظیمات مورد نیاز برای ساخت دانلود شوند. لازم به ذکر است با این دستور فایل لاگی از تمام خروجی‌های گرفته شده هم ساخته خواهد شد:
+\begin{latin}
+\begin{verbatim}
+$ breakfast bullhead | tee breakfast_log.txt
+\end{verbatim}
+\end{latin}
+لازم به ذکر است اجرای این دستور ۳۲ دقیقه طول کشید.
+محیط را برای عملیات ساخت آماده می‌کنیم. 
+استفاده از کامپایلر NINJA را غیر فعال می‌کنیم تا با خطا‌های احتمالی ناشی از پیکربندی نادرست آن رو به رو نشویم.
+
+\begin{latin}
+\begin{verbatim}
+$ export USE_NINJA=false
+\end{verbatim}
+\end{latin}
+
+برای کاهش زمان ساخت ۵۰ گیگابایت فضای cache به سیستم ساخت تخصیص می‌دهیم:
+\begin{latin}
+\begin{verbatim}
+$ export USE_CCACHE=1
+$ prebuilts/misc/linux-x86/ccache/ccache -M 50G
+\end{verbatim}
+\end{latin}
+برای بر نخوردن به مشکل کمبود حافظه هنگام ساخت، حافظه‌ی تخضیص داده شده به سیستم ساخت را به ۴ گیگابایت افزایش می‌دهیم:
+\begin{latin}
+\begin{verbatim}
+$ export ANDROID_JACK_VM_ARGS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4G"
+\end{verbatim}
+\end{latin}
+حالا عملیات ساخت را شروع می‌کنیم. لازم به ذکر است با این دستور فایل لاگی از تمام خروجی‌های گرفته شده هم ساخته خواهد شد:
+\begin{latin}
+\begin{verbatim}
+$ croot
+$ brunch bullhead | tee brunch_log.txt
+\end{verbatim}
+\end{latin}
+اجرای این دستور روی یک پردازنده‌ی ۲ هسته‌ای \lr{Intel core i7 3537U}  با هر دو هسته‌ی پردازشی، ۵۰ گیگابایت کش و ۴ گیگابایت رم اختصاصی، نزدیک به ۷ ساعت به طول انجامید.
+
+در انتها به مسیر فایل‌های خروجی رفته و آنها را مشاهده می‌کنیم:
+\begin{latin}
+\begin{verbatim}
+$ cd ~/android/lineage/out/target/product/bullhead
+$ ls
+\end{verbatim}
+\end{latin}
+این فایل‌ها چنین هستند:
+\begin{latin}
+\begin{verbatim}
+android-info.txt       
+installed-files.txt                                          
+ramdisk-recovery.img
+boot.img               
+kernel                                                       
+recovery
+build_fingerprint.txt  
+lineage-14.1-20171203_183811-UNOFFICIAL-bullhead.zip         
+recovery.id
+cache                  
+lineage-14.1-20171203_183811-UNOFFICIAL-bullhead.zip.md5sum  
+recovery.img
+cache.img              
+lineage_bullhead-ota-73e82086d6.zip                          
+root
+clean_steps.mk         
+obj                                                          
+symbols
+data                   
+obj_arm                                                      
+system
+fake_packages          
+ota_script_path                                              
+system.img
+gen                    
+previous_build_config.mk                                     
+userdata.img
+install                
+ramdisk.img
+installed-files.json   
+ramdisk-recovery.cpio
+\end{verbatim}
+\end{latin}
+
+لازم به ذکر است که خروجی‌های ساخت و زیر تمامی log ها در مخزن گیت پروژه قرار گرفته است. تنها نمی‌توانستیم فایل‌های zip نهایی rom را به علت حجم بالایشان روی مخزن قرار دهیم که در تحویل حضوری پروژه حضورا تحویل خواهند شد.
+
 \begin{thebibliography}{9}
 
 \latin
@@ -388,6 +568,8 @@ Return to function (memcpy, PIE)
 \url{https://askubuntu.com/questions/20070/whats-the-difference-between-insmod-and-modprobe}
 \bibitem{4}
 \url{https://unix.stackexchange.com/questions/47330/what-exactly-are-linux-kernel-headers}
+\bibitem{5}
+\url{https://wiki.lineageos.org/devices/bullhead/build}
 
 \end{thebibliography}
 
